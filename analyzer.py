@@ -50,7 +50,7 @@ def analyze_news(news_items: List[NewsItem]) -> Dict[str, List[Dict[str, str]]]:
             "Dünya Basınında Türkiye": []
         }
         
-    # 3. Python-side Pre-Deduplication to optimize token usage and avoid output truncation
+    # 3. Python-side Pre-Deduplication to optimize token usage and avoid exact duplicate processing
     seen_titles = set()
     deduped_items = []
     
@@ -62,13 +62,23 @@ def analyze_news(news_items: List[NewsItem]) -> Dict[str, List[Dict[str, str]]]:
             
     logger.info(f"Pre-deduplication filtered raw articles from {len(news_items)} down to {len(deduped_items)} unique titles.")
     
-    # Cap the list at 500 items to fit perfectly within LLM context and JSON generation limits
-    MAX_ITEMS = 500
-    if len(deduped_items) > MAX_ITEMS:
-        logger.info(f"Capping input articles list to top {MAX_ITEMS} for the LLM call.")
-        # Try to keep a balanced distribution or just take the first 250
-        deduped_items = deduped_items[:MAX_ITEMS]
-
+    # Cap total payload to 400, prioritizing global items to ensure we get international news summaries
+    MAX_ITEMS = 400
+    local_items = [item for item in deduped_items if item.type == "local"]
+    global_items = [item for item in deduped_items if item.type == "global"]
+    
+    logger.info(f"Unique articles: local={len(local_items)}, global={len(global_items)}")
+    
+    if len(local_items) + len(global_items) > MAX_ITEMS:
+        # Keep up to 250 global items, fill the rest (at least 150) with local items
+        keep_global = min(len(global_items), 250)
+        keep_local = MAX_ITEMS - keep_global
+        
+        subset_local = local_items[:keep_local]
+        subset_global = global_items[:keep_global]
+        deduped_items = subset_local + subset_global
+        logger.info(f"Capped input to top {MAX_ITEMS} articles: kept {len(subset_local)} local and {len(subset_global)} global unique items.")
+    
     # 4. Format news items for the LLM prompt
     raw_articles_data = []
     for item in deduped_items:
@@ -77,32 +87,38 @@ def analyze_news(news_items: List[NewsItem]) -> Dict[str, List[Dict[str, str]]]:
             "link": item.link,
             "source": item.source,
             "description": item.description,
-            "pub_date": item.pub_date
+            "pub_date": item.pub_date,
+            "type": item.type
         })
         
-    logger.info(f"Sending {len(raw_articles_data)} clean articles to Gemini API...")
+    logger.info(f"Sending {len(raw_articles_data)} unique articles to Gemini API...")
     
-    # 5. Construct prompt
+    # 5. Construct prompt with strict output capping to prevent output token truncation
     prompt = f"""
     You are an expert Turkish news editor and translator. You are given a list of raw news articles scraped from local and global RSS feeds.
     
     Your task is to process these articles and return a structured JSON object according to the schema provided.
     
     Instructions:
-    1. **Categorization**: Group all articles into one of the following 4 categories:
-       - `genel_gundem`: General news and political/economic developments in Turkey.
-       - `savunma_sanayii`: Turkish and global developments regarding the Turkish Defense Industry (Savunma Sanayii).
-       - `spor`: Turkish sports news, football, olympics, and other sports achievements.
-       - `dunya_basininda_turkiye`: News about Turkey/Turkiye from global sources (e.g. BBC, Reuters, Google News, and various country-level publications).
+    1. **Categorization & Source Rules**: Group all articles into one of the following 4 categories:
+       - `genel_gundem`: General news and political/economic developments in Turkey. MUST ONLY contain articles that have `"type": "local"` in the input data. Do not include global articles here.
+       - `savunma_sanayii`: Turkish and global developments regarding the Turkish Defense Industry (Savunma Sanayii). Can contain articles with BOTH `"type": "local"` and `"type": "global"`.
+       - `spor`: Turkish sports news and sports achievements. MUST ONLY contain articles that have `"type": "local"` in the input data.
+       - `dunya_basininda_turkiye`: News about Turkey/Turkiye from global sources (e.g. BBC, Reuters, NYT, DW, El Pais, Le Monde, TASS, Sputnik, etc.). MUST ONLY contain articles that have `"type": "global"` in the input data. Under no circumstances should local Turkish sources (where `"type": "local"`) be categorized here!
        
-    2. **Deduplication**: Merge/combine articles reporting on the same event or news.
-       - For duplicate entries, create a single consolidated article.
-       - Select the most representative title.
-       - Retain a valid original URL link and source name from one of the merged articles. Do not invent links!
+    2. **Deduplication & Selection**: 
+       - Merge/combine articles reporting on the same event or news.
+       - Select only the most important, critical, and news-worthy developments for each category.
+       - **CRITICAL OUTPUT LIMIT**: To prevent JSON output truncation (due to API token limitations), limit the returned list to a maximum of:
+         * 10 items for `genel_gundem`
+         * 10 items for `savunma_sanayii`
+         * 10 items for `spor`
+         * 15 items for `dunya_basininda_turkiye`
+       Choose the most important, headline-worthy stories for these slots!
        
     3. **Translation & Summarization**:
        - Translate all articles from foreign languages (e.g. English, German, Spanish, French, etc.) to fluent, natural, and professional Turkish.
-       - Summarize each article/merged news item in a brief, concise, and clear paragraph (1 to 3 sentences max) in Turkish.
+       - Summarize each selected news item in a brief, concise, and clear paragraph (1 to 3 sentences max) in Turkish.
        
     4. **Link Integrity**:
        - The 'link' and 'source' fields MUST be exactly preserved from the input articles. Never invent or hallucinate URL paths.
@@ -113,9 +129,10 @@ def analyze_news(news_items: List[NewsItem]) -> Dict[str, List[Dict[str, str]]]:
     
     # 6. Call Gemini API
     try:
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        # Using gemini-3.5-flash as requested by the user
+        model = genai.GenerativeModel("models/gemini-3.5-flash")
         
-        logger.info("Calling Gemini API...")
+        logger.info("Calling Gemini API (gemini-3.5-flash)...")
         response = model.generate_content(
             prompt,
             generation_config={

@@ -7,3 +7,4 @@ class NewsItem(BaseModel):
     source: str
     description: Optional[str] = ""
     pub_date: Optional[str] = ""
+    type: Optional[str] = "local"  # "local" or "global"

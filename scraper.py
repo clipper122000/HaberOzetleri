@@ -12,9 +12,9 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 }
 
-# Source configurations - Optimized to remove 404s
+# Source configurations - Local sources filtered as requested
 SOURCES = [
-    # --- YEREL KAYNAKLAR (20 Turkish Sources) ---
+    # --- YEREL KAYNAKLAR (13 Turkish Sources) ---
     {"name": "TRT Haber", "url": "https://www.trthaber.com/sondakika.rss", "type": "local"},
     {"name": "AA", "url": "https://www.aa.com.tr/tr/rss/default?cat=guncel", "type": "local"},
     {"name": "Hürriyet", "url": "https://www.hurriyet.com.tr/rss/anasayfa", "type": "local"},
@@ -28,13 +28,6 @@ SOURCES = [
     {"name": "NTV", "url": "https://www.ntv.com.tr/gundem.rss", "type": "local"},
     {"name": "Sabah", "url": "https://www.sabah.com.tr/rss/anasayfa.xml", "type": "local"},
     {"name": "CNN Türk", "url": "https://www.cnnturk.com/feed/rss/all/news", "type": "local"},
-    {"name": "T24", "url": "https://t24.com.tr/feed", "type": "local"},
-    {"name": "BirGün", "url": "https://www.birgun.net/rss/home", "type": "local"},
-    {"name": "Star", "url": "https://www.star.com.tr/rss/rss.asp", "type": "local"},
-    {"name": "Akşam", "url": "https://www.aksam.com.tr/rss/rss.asp", "type": "local"},
-    {"name": "Gazete Duvar", "url": "https://www.gazeteduvar.com.tr/export/rss", "type": "local"},
-    {"name": "Karar", "url": "https://www.karar.com/rss", "type": "local"},
-    {"name": "Diken", "url": "https://www.diken.com.tr/feed/", "type": "local"},
 
     # --- GLOBAL KAYNAKLAR (Targeted searches by country + BBC World) ---
     {
@@ -197,7 +190,8 @@ def fetch_feed(source: Dict[str, Any]) -> List[NewsItem]:
                 link=link,
                 source=dynamic_source,
                 description=description,
-                pub_date=pub_date
+                pub_date=pub_date,
+                type=source.get("type", "local")
             )
             items.append(news_item)
             
