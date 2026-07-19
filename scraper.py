@@ -12,9 +12,9 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 }
 
-# Source configurations
+# Source configurations - Optimized to remove 404s
 SOURCES = [
-    # Yerel Kaynaklar (Turkish Sources)
+    # --- YEREL KAYNAKLAR (20 Turkish Sources) ---
     {"name": "TRT Haber", "url": "https://www.trthaber.com/sondakika.rss", "type": "local"},
     {"name": "AA", "url": "https://www.aa.com.tr/tr/rss/default?cat=guncel", "type": "local"},
     {"name": "Hürriyet", "url": "https://www.hurriyet.com.tr/rss/anasayfa", "type": "local"},
@@ -25,11 +25,26 @@ SOURCES = [
     {"name": "Sözcü", "url": "https://www.sozcu.com.tr/feeds-son-dakika", "type": "local"},
     {"name": "Habertürk", "url": "https://www.haberturk.com/rss", "type": "local"},
     {"name": "Bloomberg HT", "url": "https://www.bloomberght.com/rss", "type": "local"},
+    {"name": "NTV", "url": "https://www.ntv.com.tr/gundem.rss", "type": "local"},
+    {"name": "Sabah", "url": "https://www.sabah.com.tr/rss/anasayfa.xml", "type": "local"},
+    {"name": "CNN Türk", "url": "https://www.cnnturk.com/feed/rss/all/news", "type": "local"},
+    {"name": "T24", "url": "https://t24.com.tr/feed", "type": "local"},
+    {"name": "BirGün", "url": "https://www.birgun.net/rss/home", "type": "local"},
+    {"name": "Star", "url": "https://www.star.com.tr/rss/rss.asp", "type": "local"},
+    {"name": "Akşam", "url": "https://www.aksam.com.tr/rss/rss.asp", "type": "local"},
+    {"name": "Gazete Duvar", "url": "https://www.gazeteduvar.com.tr/export/rss", "type": "local"},
+    {"name": "Karar", "url": "https://www.karar.com/rss", "type": "local"},
+    {"name": "Diken", "url": "https://www.diken.com.tr/feed/", "type": "local"},
 
-    # Global Kaynaklar (Global Sources with Turkey focus)
+    # --- GLOBAL KAYNAKLAR (Targeted searches by country + BBC World) ---
     {
-        "name": "Google News Global",
-        "url": "https://news.google.com/rss/search?q=Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en",
+        "name": "US Media",
+        "url": "https://news.google.com/rss/search?q=site:nytimes.com+OR+site:washingtonpost.com+OR+site:cnn.com+OR+site:wsj.com+OR+site:bloomberg.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en",
+        "type": "global"
+    },
+    {
+        "name": "UK Media",
+        "url": "https://news.google.com/rss/search?q=site:theguardian.com+OR+site:thetimes.co.uk+OR+site:ft.com+OR+site:independent.co.uk+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en",
         "type": "global"
     },
     {
@@ -42,11 +57,87 @@ SOURCES = [
         "name": "Reuters",
         "url": "https://news.google.com/rss/search?q=site:reuters.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en",
         "type": "global"
+    },
+    {
+        "name": "Germany Media",
+        "url": "https://news.google.com/rss/search?q=site:dw.com+OR+site:spiegel.de+OR+site:zeit.de+OR+site:welt.de+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en",
+        "type": "global"
+    },
+    {
+        "name": "Spain Media",
+        "url": "https://news.google.com/rss/search?q=site:elpais.com+OR+site:elmundo.es+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en",
+        "type": "global"
+    },
+    {
+        "name": "Italy Media",
+        "url": "https://news.google.com/rss/search?q=site:corriere.it+OR+site:repubblica.it+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en",
+        "type": "global"
+    },
+    {
+        "name": "France Media",
+        "url": "https://news.google.com/rss/search?q=site:lemonde.fr+OR+site:lefigaro.fr+OR+site:france24.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en",
+        "type": "global"
+    },
+    {
+        "name": "Greece Media",
+        "url": "https://news.google.com/rss/search?q=site:ekathimerini.com+OR+site:tovima.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en",
+        "type": "global"
+    },
+    {
+        "name": "Israel Media",
+        "url": "https://news.google.com/rss/search?q=site:haaretz.com+OR+site:jpost.com+OR+site:timesofisrael.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en",
+        "type": "global"
+    },
+    {
+        "name": "Russia Media",
+        "url": "https://news.google.com/rss/search?q=site:rt.com+OR+site:tass.com+OR+site:sputniknews.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en",
+        "type": "global"
+    },
+    {
+        "name": "Iran Media",
+        "url": "https://news.google.com/rss/search?q=site:presstv.ir+OR+site:irna.ir+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en",
+        "type": "global"
+    },
+    {
+        "name": "China Media",
+        "url": "https://news.google.com/rss/search?q=site:xinhuanet.com+OR+site:cgtn.com+OR+site:scmp.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en",
+        "type": "global"
+    },
+    {
+        "name": "Sweden Media",
+        "url": "https://news.google.com/rss/search?q=site:svt.se+OR+site:dn.se+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en",
+        "type": "global"
+    },
+    {
+        "name": "Norway Media",
+        "url": "https://news.google.com/rss/search?q=site:nrk.no+OR+site:aftenposten.no+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en",
+        "type": "global"
+    },
+    {
+        "name": "Denmark Media",
+        "url": "https://news.google.com/rss/search?q=site:dr.dk+OR+site:politiken.dk+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en",
+        "type": "global"
+    },
+    {
+        "name": "Google News Global",
+        "url": "https://news.google.com/rss/search?q=Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en",
+        "type": "global"
     }
 ]
 
-# Keywords for global sources that require programmatic filtering (like BBC World)
-FILTER_KEYWORDS = ["turkey", "turkiye", "turkish", "ankara", "istanbul", "erdogan"]
+# Keywords for global sources programmatic filtering (like BBC World), expanded with famous Turks
+FILTER_KEYWORDS = [
+    # General terms
+    "turkey", "turkiye", "turkish", "ankara", "istanbul", "erdogan", "tayyip",
+    
+    # World-famous Turkish names
+    "orhan pamuk", "nuri bilge ceylan", "muhtar kent", "daron acemoglu", "daron acemoğlu",
+    "ugur sahin", "ugur şahin", "ozlem tureci", "özlem türeci", "mehmet oz", "dr. oz",
+    "hakan calhanoglu", "hakan çalhanoğlu", "arda guler", "arda güler", "kenan yildiz",
+    "kenan yıldız", "selcuk bayraktar", "selçuk bayraktar", "haluk bayraktar", "aziz sancar",
+    "can yaman", "ebrar karakurt", "melissa vargas", "ferzan ozpetek", "ferzan özpetek",
+    "alper gezeravci", "alper gezeravcı"
+]
 
 def fetch_feed(source: Dict[str, Any]) -> List[NewsItem]:
     """
@@ -55,7 +146,6 @@ def fetch_feed(source: Dict[str, Any]) -> List[NewsItem]:
     """
     name = source["name"]
     url = source["url"]
-    is_global = source.get("type") == "global"
     should_filter = source.get("filter", False)
     
     items = []
@@ -88,11 +178,24 @@ def fetch_feed(source: Dict[str, Any]) -> List[NewsItem]:
                 if not any(keyword in text_to_check for keyword in FILTER_KEYWORDS):
                     continue
             
+            # --- Dynamically extract exact publisher name from Google News feeds ---
+            dynamic_source = name
+            source_info = entry.get("source")
+            
+            if source_info and isinstance(source_info, dict) and "title" in source_info:
+                dynamic_source = source_info["title"].strip()
+            elif " - " in title:
+                # Fallback: Google News appends " - Publisher Name" at the end of the title
+                parts = title.rsplit(" - ", 1)
+                if len(parts) > 1:
+                    dynamic_source = parts[1].strip()
+                    title = parts[0].strip()  # Clean title for layout
+            
             # Map RSS fields to our NewsItem model
             news_item = NewsItem(
                 title=title,
                 link=link,
-                source=name,
+                source=dynamic_source,
                 description=description,
                 pub_date=pub_date
             )
@@ -121,8 +224,6 @@ def scrape_all_sources() -> List[NewsItem]:
     return all_news
 
 if __name__ == "__main__":
-    logger.info("Running scraper directly for smoke testing...")
+    logger.info("Running optimized scraper directly for testing...")
     results = scrape_all_sources()
     print(f"\n--- Scrape Summary: Aggregated {len(results)} articles ---")
-    if results:
-        print(f"Sample Article: {results[0].model_dump()}")

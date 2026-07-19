@@ -31,7 +31,6 @@ def analyze_news(news_items: List[NewsItem]) -> Dict[str, List[Dict[str, str]]]:
     api_key = os.environ.get("LLM_API_KEY") or os.environ.get("GEMINI_API_KEY")
     if not api_key:
         logger.error("Neither LLM_API_KEY nor GEMINI_API_KEY is found in environment variables!")
-        # Return empty categories structure as fallback
         return {
             "Genel Gündem": [],
             "Savunma Sanayii": [],
@@ -51,9 +50,28 @@ def analyze_news(news_items: List[NewsItem]) -> Dict[str, List[Dict[str, str]]]:
             "Dünya Basınında Türkiye": []
         }
         
-    # 3. Format news items for the LLM prompt
-    raw_articles_data = []
+    # 3. Python-side Pre-Deduplication to optimize token usage and avoid output truncation
+    seen_titles = set()
+    deduped_items = []
+    
     for item in news_items:
+        title_normalized = item.title.strip().lower()
+        if title_normalized not in seen_titles:
+            seen_titles.add(title_normalized)
+            deduped_items.append(item)
+            
+    logger.info(f"Pre-deduplication filtered raw articles from {len(news_items)} down to {len(deduped_items)} unique titles.")
+    
+    # Cap the list at 500 items to fit perfectly within LLM context and JSON generation limits
+    MAX_ITEMS = 500
+    if len(deduped_items) > MAX_ITEMS:
+        logger.info(f"Capping input articles list to top {MAX_ITEMS} for the LLM call.")
+        # Try to keep a balanced distribution or just take the first 250
+        deduped_items = deduped_items[:MAX_ITEMS]
+
+    # 4. Format news items for the LLM prompt
+    raw_articles_data = []
+    for item in deduped_items:
         raw_articles_data.append({
             "title": item.title,
             "link": item.link,
@@ -62,9 +80,9 @@ def analyze_news(news_items: List[NewsItem]) -> Dict[str, List[Dict[str, str]]]:
             "pub_date": item.pub_date
         })
         
-    logger.info(f"Preparing to send {len(raw_articles_data)} articles to Gemini API...")
+    logger.info(f"Sending {len(raw_articles_data)} clean articles to Gemini API...")
     
-    # 4. Construct prompt
+    # 5. Construct prompt
     prompt = f"""
     You are an expert Turkish news editor and translator. You are given a list of raw news articles scraped from local and global RSS feeds.
     
@@ -75,7 +93,7 @@ def analyze_news(news_items: List[NewsItem]) -> Dict[str, List[Dict[str, str]]]:
        - `genel_gundem`: General news and political/economic developments in Turkey.
        - `savunma_sanayii`: Turkish and global developments regarding the Turkish Defense Industry (Savunma Sanayii).
        - `spor`: Turkish sports news, football, olympics, and other sports achievements.
-       - `dunya_basininda_turkiye`: News about Turkey/Turkiye from global sources (e.g. BBC, Reuters, Google News Global).
+       - `dunya_basininda_turkiye`: News about Turkey/Turkiye from global sources (e.g. BBC, Reuters, Google News, and various country-level publications).
        
     2. **Deduplication**: Merge/combine articles reporting on the same event or news.
        - For duplicate entries, create a single consolidated article.
@@ -83,7 +101,7 @@ def analyze_news(news_items: List[NewsItem]) -> Dict[str, List[Dict[str, str]]]:
        - Retain a valid original URL link and source name from one of the merged articles. Do not invent links!
        
     3. **Translation & Summarization**:
-       - Translate all articles from foreign languages (e.g. English news from global sources) to fluent, natural, and professional Turkish.
+       - Translate all articles from foreign languages (e.g. English, German, Spanish, French, etc.) to fluent, natural, and professional Turkish.
        - Summarize each article/merged news item in a brief, concise, and clear paragraph (1 to 3 sentences max) in Turkish.
        
     4. **Link Integrity**:
@@ -93,10 +111,9 @@ def analyze_news(news_items: List[NewsItem]) -> Dict[str, List[Dict[str, str]]]:
     {json.dumps(raw_articles_data, ensure_ascii=False, indent=2)}
     """
     
-    # 5. Call Gemini API
+    # 6. Call Gemini API
     try:
-        # Use gemini-3.5-flash as it is fast, stable, and highly capable for summarization tasks
-        model = genai.GenerativeModel("gemini-3.5-flash")
+        model = genai.GenerativeModel("gemini-1.5-flash")
         
         logger.info("Calling Gemini API...")
         response = model.generate_content(
@@ -113,7 +130,7 @@ def analyze_news(news_items: List[NewsItem]) -> Dict[str, List[Dict[str, str]]]:
         
         data = json.loads(raw_response_text)
         
-        # Map response keys to the Turkish display categories requested in Section A/B
+        # Map response keys to the Turkish display categories
         mapped_result = {
             "Genel Gündem": data.get("genel_gundem", []),
             "Savunma Sanayii": data.get("savunma_sanayii", []),

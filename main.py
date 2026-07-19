@@ -62,7 +62,7 @@ def run_pipeline(recipient_email: str = None, skip_email: bool = False):
         
     # Step 4: Email the PDF report
     if skip_email:
-        logger.info("Step 4: Skipped email sending (flag --skip-email active).")
+        logger.info("Step 4: Skipped email sending (flag --skip-email active). PDF file retained for local review.")
     else:
         logger.info("Step 4: Sending email report...")
         email_sent = send_report_email(pdf_path, recipient_email)
@@ -70,6 +70,14 @@ def run_pipeline(recipient_email: str = None, skip_email: bool = False):
             logger.info("Step 4: Email sent successfully.")
         else:
             logger.error("Step 4: Email sending failed. Review SMTP configuration in logs.")
+            
+        # Clean up PDF file to prevent repository/project clutter
+        if os.path.exists(pdf_path):
+            try:
+                os.remove(pdf_path)
+                logger.info(f"Cleaned up generated PDF file to prevent repository clutter: {pdf_path}")
+            except Exception as cleanup_err:
+                logger.error(f"Failed to delete PDF file during cleanup: {cleanup_err}")
             
     end_time = datetime.now()
     duration = end_time - start_time
