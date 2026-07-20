@@ -2,8 +2,8 @@ name: Daily News Summary Reporter
 
 on:
   schedule:
-    # 05:00 UTC represents 08:00 TSI (Turkey Standard Time, UTC+3)
-    - cron: '0 5 * * *'
+    # TSİ 07:48 (UTC 04:48) - Sunucu yükü en düşük olan zaman dilimi
+    - cron: '48 4 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 jobs:
