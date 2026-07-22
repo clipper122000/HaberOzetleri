@@ -2,8 +2,8 @@ name: Daily News Summary Reporter
 
 on:
   schedule:
-    # TSİ 07:48 (UTC 04:48) - Sunucu yükü en düşük olan zaman dilimi
-    - cron: '48 4 * * *'
+    # TSİ 05:48 (UTC 02:48) - Sunucu yükü en düşük olan zaman dilimi
+    - cron: '48 2 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 jobs:
