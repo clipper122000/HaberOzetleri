@@ -1,6 +1,16 @@
 import os
 import sys
 import logging
+import warnings
+
+# Suppress google deprecation warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
+
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger("Diagnostic")
@@ -51,7 +61,13 @@ def run_diagnostics():
             genai.configure(api_key=active_key)
             
             logger.info("Testing Gemini connection with simple prompt...")
-            model = genai.GenerativeModel("models/gemini-3.5-flash")
+            model_name = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+            if not model_name.startswith("models/"):
+                model_path = f"models/{model_name}"
+            else:
+                model_path = model_name
+            logger.info(f"Using model: {model_path}")
+            model = genai.GenerativeModel(model_path)
             response = model.generate_content("Say 'Gemini is connected' in Turkish.")
             logger.info(f"✅ Gemini Response: {response.text.strip()}")
         except Exception as e:

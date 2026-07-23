@@ -2,7 +2,48 @@ import logging
 import requests
 import feedparser
 from typing import List, Dict, Any
+from datetime import datetime, timezone, timedelta
+import email.utils
 from models import NewsItem
+
+def clean_and_format_date(entry) -> tuple[str, str]:
+    """
+    Parses entry pub_date to a timezone-aware UTC datetime and a Turkish-formatted display string.
+    Returns: (formatted_display_string, iso_date_utc_string)
+    """
+    dt = None
+    parsed_struct = entry.get("published_parsed") or entry.get("updated_parsed")
+    if parsed_struct:
+        try:
+            dt = datetime(*parsed_struct[:6], tzinfo=timezone.utc)
+        except Exception:
+            pass
+            
+    if not dt:
+        for field in ["published", "pubDate", "updated", "date"]:
+            val = entry.get(field)
+            if val:
+                try:
+                    parsed_dt = email.utils.parsedate_to_datetime(val)
+                    if parsed_dt.tzinfo is None:
+                        dt = parsed_dt.replace(tzinfo=timezone.utc)
+                    else:
+                        dt = parsed_dt.astimezone(timezone.utc)
+                    break
+                except Exception:
+                    pass
+                    
+    if dt:
+        # Convert to Turkish time (UTC+3)
+        trt_tz = timezone(timedelta(hours=3))
+        local_dt = dt.astimezone(trt_tz)
+        formatted_str = local_dt.strftime("%d.%m.%Y %H:%M")
+        return formatted_str, dt.isoformat()
+    else:
+        # Fallback to whatever string is present
+        raw_val = entry.get("published", entry.get("pubDate", "")).strip()
+        return raw_val, None
+
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
@@ -160,7 +201,7 @@ def fetch_feed(source: Dict[str, Any]) -> List[NewsItem]:
             title = entry.get("title", "").strip()
             link = entry.get("link", "").strip()
             description = entry.get("summary", entry.get("description", "")).strip()
-            pub_date = entry.get("published", entry.get("pubDate", "")).strip()
+            pub_date_display, iso_date_utc = clean_and_format_date(entry)
             
             if not title or not link:
                 continue
@@ -190,7 +231,8 @@ def fetch_feed(source: Dict[str, Any]) -> List[NewsItem]:
                 link=link,
                 source=dynamic_source,
                 description=description,
-                pub_date=pub_date,
+                pub_date=pub_date_display,
+                iso_date=iso_date_utc,
                 type=source.get("type", "local")
             )
             items.append(news_item)

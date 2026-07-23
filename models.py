@@ -7,4 +7,5 @@ class NewsItem(BaseModel):
     source: str
     description: Optional[str] = ""
     pub_date: Optional[str] = ""
+    iso_date: Optional[str] = None  # ISO format UTC timestamp for filtering/sorting
     type: Optional[str] = "local"  # "local" or "global"

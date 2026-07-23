@@ -2,31 +2,66 @@ import argparse
 import logging
 import os
 import sys
-from datetime import datetime
+import warnings
+from datetime import datetime, timezone, timedelta
+
+# Suppress google deprecation warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
+
+# Configure Windows DLL search paths for WeasyPrint/cffi
+if sys.platform == "win32":
+    base_dir = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+    dll_dirs = [
+        base_dir,
+        os.path.join(base_dir, "gtk_bin"),
+        r"C:\msys64\mingw64\bin",
+        r"C:\Program Files\GTK3-Runtime Win64\bin",
+        r"C:\Program Files (x86)\GTK3-Runtime Win64\bin"
+    ]
+    for d in dll_dirs:
+        if os.path.exists(d):
+            os.environ["PATH"] = d + os.pathsep + os.environ.get("PATH", "")
+            if hasattr(os, "add_dll_directory"):
+                try:
+                    os.add_dll_directory(d)
+                except Exception:
+                    pass
+
+# Get absolute directory of main.py
+script_dir = os.path.dirname(os.path.abspath(__file__))
+dotenv_path = os.path.join(script_dir, ".env")
+
+try:
+    from dotenv import load_dotenv
+    load_dotenv(dotenv_path=dotenv_path, override=True)
+except ImportError:
+    pass
+
+# Configure logging immediately with force=True
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.StreamHandler(sys.stdout),
+        logging.FileHandler(os.path.join(script_dir, "daily_report.log"), encoding="utf-8")
+    ],
+    force=True
+)
+logger = logging.getLogger("Orchestrator")
 
 from scraper import scrape_all_sources
 from analyzer import analyze_news
 from pdf_generator import generate_pdf
 from mailer import send_report_email
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    handlers=[
-        logging.StreamHandler(sys.stdout),
-        logging.FileHandler("daily_report.log", encoding="utf-8")
-    ]
-)
-logger = logging.getLogger("Orchestrator")
-
-def run_pipeline(recipient_email: str = None, skip_email: bool = False):
+def run_pipeline(recipient_email: str = None, skip_email: bool = False, limit: int = 400):
     """
     Orchestrates the entire news summary reporting pipeline:
     1. Scrapes local and global RSS feeds.
-    2. Analyzes, translates, deduplicates, and categorizes news via Gemini.
-    3. Generates a beautifully formatted PDF report (using Weasyprint).
-    4. Emails the PDF report to the user (via secure Gmail SMTP).
+    2. Filters out articles older than 2 days.
+    3. Analyzes, translates, deduplicates, and categorizes news via Gemini.
+    4. Generates a beautifully formatted PDF report (using Weasyprint).
+    5. Emails the PDF report to the user (via secure Gmail SMTP) with stats.
     """
     logger.info("=========================================")
     logger.info("Starting Daily News Summary Report Pipeline")
@@ -41,11 +76,55 @@ def run_pipeline(recipient_email: str = None, skip_email: bool = False):
         logger.warning("Scraping completed but no news articles were retrieved. Pipeline stopping.")
         return
         
-    logger.info(f"Step 1: Scraped {len(raw_news)} raw news articles.")
+    total_scraped = len(raw_news)
+    logger.info(f"Step 1: Scraped {total_scraped} raw news articles.")
+    
+    # Filter by date: keep only last 2 days (relative to Turkey Local Time UTC+3)
+    logger.info("Filtering news to only keep the last 2 days...")
+    trt_tz = timezone(timedelta(hours=3))
+    now_utc = datetime.now(timezone.utc)
+    now_local = now_utc.astimezone(trt_tz)
+    yesterday_local = now_local.date() - timedelta(days=1)
+    cutoff_local = datetime.combine(yesterday_local, datetime.min.time()).replace(tzinfo=trt_tz)
+    cutoff_utc = cutoff_local.astimezone(timezone.utc)
+    
+    remaining_news = []
+    excluded_by_date = 0
+    for item in raw_news:
+        if not item.iso_date:
+            remaining_news.append(item)
+            continue
+        try:
+            item_dt = datetime.fromisoformat(item.iso_date)
+            if item_dt >= cutoff_utc:
+                remaining_news.append(item)
+            else:
+                excluded_by_date += 1
+        except Exception:
+            remaining_news.append(item)
+            
+    remaining_after_date = len(remaining_news)
+    logger.info(f"Date filtering: {excluded_by_date} articles excluded. {remaining_after_date} articles remaining.")
+    
+    # Pre-deduplicate to count how many unique remaining articles we have before capping
+    seen_titles = set()
+    deduped_remaining = []
+    for item in remaining_news:
+        title_normalized = item.title.strip().lower()
+        if title_normalized not in seen_titles:
+            seen_titles.add(title_normalized)
+            deduped_remaining.append(item)
+            
+    unique_remaining_count = len(deduped_remaining)
+    excluded_by_limit = max(0, unique_remaining_count - limit)
+    logger.info(f"Pre-deduplication: {unique_remaining_count} unique articles out of {remaining_after_date} remaining.")
+    logger.info(f"Limit capping: {excluded_by_limit} unique articles will be excluded because of analysis limit ({limit}).")
     
     # Step 2: Analyze and summarize news with LLM
-    logger.info("Step 2: Sending articles to Gemini API for analysis...")
-    analyzed_data = analyze_news(raw_news)
+    logger.info(f"Step 2: Sending articles to Gemini API for analysis (limit: {limit})...")
+    analysis_result = analyze_news(remaining_news, max_items=limit)
+    analyzed_data = analysis_result["reports"]
+    category_stats = analysis_result["stats"]
     
     # Quick count of analyzed articles for logging
     total_analyzed = sum(len(items) for items in analyzed_data.values())
@@ -65,7 +144,17 @@ def run_pipeline(recipient_email: str = None, skip_email: bool = False):
         logger.info("Step 4: Skipped email sending (flag --skip-email active). PDF file retained for local review.")
     else:
         logger.info("Step 4: Sending email report...")
-        email_sent = send_report_email(pdf_path, recipient_email)
+        email_sent = send_report_email(
+            pdf_path=pdf_path,
+            recipient_email=recipient_email,
+            total_scraped=total_scraped,
+            excluded_by_date=excluded_by_date,
+            remaining_after_date=remaining_after_date,
+            excluded_by_limit=excluded_by_limit,
+            limit=limit,
+            category_stats=category_stats,
+            analyzed_data=analyzed_data
+        )
         if email_sent:
             logger.info("Step 4: Email sent successfully.")
         else:
@@ -98,10 +187,17 @@ if __name__ == "__main__":
         action="store_true", 
         help="Generate the PDF report locally but do not send the email."
     )
+    parser.add_argument(
+        "--limit", 
+        type=int, 
+        default=int(os.environ.get("ANALYSIS_LIMIT", 400)), 
+        help="Maximum number of unique news articles to send for Gemini analysis."
+    )
     
     args = parser.parse_args()
     
     run_pipeline(
         recipient_email=args.recipient,
-        skip_email=args.skip_email
+        skip_email=args.skip_email,
+        limit=args.limit
     )

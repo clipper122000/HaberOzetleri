@@ -10,7 +10,17 @@ from datetime import datetime
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
-def send_report_email(pdf_path: str, recipient_email: str = None) -> bool:
+def send_report_email(
+    pdf_path: str,
+    recipient_email: str = None,
+    total_scraped: int = None,
+    excluded_by_date: int = None,
+    remaining_after_date: int = None,
+    excluded_by_limit: int = None,
+    limit: int = None,
+    category_stats: dict = None,
+    analyzed_data: dict = None
+) -> bool:
     """
     Sends the generated news summary PDF report via Gmail SMTP using
     credentials read securely from environment variables.
@@ -42,10 +52,76 @@ def send_report_email(pdf_path: str, recipient_email: str = None) -> bool:
     msg["Subject"] = f"Günlük Haber Gündem Raporu - {today_str}"
     
     # 3. Build email body message
+    stats_text = ""
+    if total_scraped is not None:
+        stats_text = f"""
+Sistem Raporlama İstatistikleri:
+- Toplam Çekilen Haber Sayısı: {total_scraped}
+- Son 2 Günden Eski Olduğu İçin Değerlendirme Dışı Bırakılan Haber Sayısı: {excluded_by_date}
+- Kalan (Son 2 Güne Ait) Haber Sayısı: {remaining_after_date}
+- Limit Nedeniyle Analize Dahil Edilmeyen Haber Sayısı: {excluded_by_limit} (Limit: {limit})
+"""
+        if category_stats:
+            stats_text += "\nKategori Bazlı Analiz ve Raporlama Detayları:\n"
+            category_mapping = {
+                "genel_gundem": "🇹🇷 Genel Gündem",
+                "savunma_sanayii": "🛡️ Savunma Sanayii",
+                "spor": "🏆 Spor",
+                "dunya_basininda_turkiye": "🌍 Dünya Basınında Türkiye"
+            }
+            for key, display_name in category_mapping.items():
+                c_data = category_stats.get(key)
+                if c_data:
+                    if isinstance(c_data, dict):
+                        total = c_data.get("total_evaluated", 0)
+                        reported = c_data.get("reported_count", 0)
+                        unreported = c_data.get("unreported_count", 0)
+                        reasons = c_data.get("reasons_for_exclusion", [])
+                    else:
+                        total = getattr(c_data, "total_evaluated", 0)
+                        reported = getattr(c_data, "reported_count", 0)
+                        unreported = getattr(c_data, "unreported_count", 0)
+                        reasons = getattr(c_data, "reasons_for_exclusion", [])
+                    
+                    reasons_str = ", ".join(reasons) if reasons else "N/A"
+                    stats_text += f"""* {display_name}:
+  - Analiz Edilen Haber Sayısı: {total}
+  - Raporlanan Haber Sayısı: {reported}
+  - Raporlanmayan Haber Sayısı: {unreported} (Neden: {reasons_str})
+"""
+
+    news_details_text = ""
+    if analyzed_data:
+        news_details_text = "\n=== GÜNLÜK ÖNE ÇIKAN HABER ÖZETLERİ DETAYI ===\n"
+        for category, items in analyzed_data.items():
+            if items:
+                news_details_text += f"\n{category.upper()}\n" + "=" * len(category) + "\n"
+                for idx, item in enumerate(items, 1):
+                    title = item.get("title", "Başlıksız")
+                    summary = item.get("summary", "")
+                    source = item.get("source", "Bilinmeyen Kaynak")
+                    link = item.get("link", "")
+                    pub_date = item.get("pub_date", "")
+                    
+                    meta_info = f"Kaynak: {source}"
+                    if pub_date:
+                        meta_info += f" ({pub_date})"
+                    if link:
+                        meta_info += f"\n   Link: {link}"
+                        
+                    news_details_text += f"{idx}. {title}\n"
+                    if summary:
+                        news_details_text += f"   Özet: {summary}\n"
+                    news_details_text += f"   {meta_info}\n\n"
+            else:
+                news_details_text += f"\n{category.upper()}\n" + "=" * len(category) + "\n"
+                news_details_text += "Bu kategoriye ait bugün güncel bir haber bulunmamaktadır.\n\n"
+
     body_text = f"""Merhaba,
 
 Günün öne çıkan Türkiye ve Dünya basını gelişmelerini içeren derlenmiş haber özeti raporu ekte PDF olarak tarafınıza sunulmuştur.
-
+{stats_text}
+{news_details_text}
 İyi sabahlar ve verimli bir gün dileriz.
 
 -- 

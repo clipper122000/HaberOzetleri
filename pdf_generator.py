@@ -49,13 +49,18 @@ def generate_pdf(analyzed_data: Dict[str, List[Dict[str, str]]], output_path: st
                 summary = item.get("summary", "Özet bulunamadı.")
                 source = item.get("source", "Bilinmeyen Kaynak")
                 link = item.get("link", "#")
+                pub_date = item.get("pub_date", "")
+                
+                meta_text = f"Kaynak: {source}"
+                if pub_date:
+                    meta_text += f" ({pub_date})"
                 
                 items_html += f"""
                 <div class="news-item">
                     <h3 class="news-title">{title}</h3>
                     <p class="news-summary">{summary}</p>
                     <div class="news-meta">
-                        <a href="{link}" class="news-link">Kaynak: {source}</a>
+                        <a href="{link}" class="news-link">{meta_text}</a>
                     </div>
                 </div>
                 """
@@ -224,6 +229,21 @@ def generate_pdf(analyzed_data: Dict[str, List[Dict[str, str]]], output_path: st
         HTML(string=html_content).write_pdf(output_path)
         logger.info(f"Successfully generated PDF at: {output_path}")
         return output_path
+    except PermissionError:
+        logger.warning(f"Permission denied writing to {output_path} (file might be open/locked). Trying fallback filename...")
+        timestamp_str = datetime.now().strftime("%H%M%S")
+        dir_name = os.path.dirname(output_path)
+        base_name = os.path.basename(output_path)
+        name_parts = os.path.splitext(base_name)
+        fallback_name = f"{name_parts[0]}_{timestamp_str}{name_parts[1]}"
+        output_path = os.path.join(dir_name, fallback_name)
+        try:
+            HTML(string=html_content).write_pdf(output_path)
+            logger.info(f"Successfully generated PDF at fallback path: {output_path}")
+            return output_path
+        except Exception as fallback_err:
+            logger.error(f"Failed to generate PDF at fallback path using Weasyprint: {fallback_err}")
+            raise fallback_err
     except Exception as e:
         logger.error(f"Failed to generate PDF using Weasyprint: {e}")
         raise e
