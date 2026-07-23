@@ -4,3 +4,4 @@ beautifulsoup4
 pydantic
 weasyprint
 google-generativeai
+python-dotenv
