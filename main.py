@@ -27,8 +27,11 @@ if sys.platform == "win32":
                 except Exception:
                     pass
 
-# Get absolute directory of main.py
-script_dir = os.path.dirname(os.path.abspath(__file__))
+# Get absolute directory of the script or executable
+if getattr(sys, 'frozen', False):
+    script_dir = os.path.dirname(sys.executable)
+else:
+    script_dir = os.path.dirname(os.path.abspath(__file__))
 dotenv_path = os.path.join(script_dir, ".env")
 
 try:
