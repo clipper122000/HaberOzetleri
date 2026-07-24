@@ -27,6 +27,16 @@ if sys.platform == "win32":
                 except Exception:
                     pass
 
+    # Set FONTCONFIG_PATH dynamically so it loads bundled fonts.conf if available
+    fontconfig_dir = os.path.join(base_dir, "etc", "fonts")
+    if os.path.exists(fontconfig_dir):
+        os.environ["FONTCONFIG_PATH"] = fontconfig_dir
+    else:
+        # Check inside gtk_bin as well
+        fontconfig_dir_fallback = os.path.join(base_dir, "gtk_bin", "etc", "fonts")
+        if os.path.exists(fontconfig_dir_fallback):
+            os.environ["FONTCONFIG_PATH"] = fontconfig_dir_fallback
+
 # Get absolute directory of the script or executable
 if getattr(sys, 'frozen', False):
     script_dir = os.path.dirname(sys.executable)
