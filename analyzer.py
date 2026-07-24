@@ -32,11 +32,20 @@ class StatsResponse(BaseModel):
     spor: CategoryStats = Field(description="Stats for 'spor' category.")
     dunya_basininda_turkiye: CategoryStats = Field(description="Stats for 'dunya_basininda_turkiye' category.")
 
-def analyze_news(news_items: List[NewsItem], max_items: int = 800) -> Dict[str, List[Dict[str, str]]]:
+def analyze_news(news_items: List[NewsItem], max_items: int = None) -> Dict[str, List[Dict[str, str]]]:
     """
     Sends the aggregated list of raw news items to Gemini API for translation,
     deduplication, categorization, and summarization.
     """
+    if max_items is None:
+        val = os.environ.get("ANALYSIS_LIMIT")
+        if val is None or val.strip() == "":
+            max_items = 800
+        else:
+            try:
+                max_items = int(val)
+            except ValueError:
+                max_items = 800
     # Read category limits from environment variables
     limit_genel = int(os.environ.get("LIMIT_GENEL_GUNDEM", 10))
     limit_savunma = int(os.environ.get("LIMIT_SAVUNMA_SANAYII", 10))

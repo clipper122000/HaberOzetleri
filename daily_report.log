@@ -1,0 +1,827 @@
+2026-07-23 20:52:03,686 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 20:52:03,763 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 20:52:03,765 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 20:52:03,926 - Orchestrator - INFO - =========================================
+2026-07-23 20:52:03,927 - Orchestrator - INFO - Starting Daily News Summary Report Pipeline
+2026-07-23 20:52:03,927 - Orchestrator - INFO - =========================================
+2026-07-23 20:52:03,927 - Orchestrator - INFO - Step 1: Scraping all RSS feeds...
+2026-07-23 20:52:03,937 - scraper - INFO - Fetching RSS feed for: TRT Haber (https://www.trthaber.com/sondakika.rss)
+2026-07-23 20:52:04,557 - scraper - INFO - Successfully fetched 50 items from TRT Haber
+2026-07-23 20:52:04,559 - scraper - INFO - Fetching RSS feed for: AA (https://www.aa.com.tr/tr/rss/default?cat=guncel)
+2026-07-23 20:52:04,746 - scraper - INFO - Successfully fetched 27 items from AA
+2026-07-23 20:52:04,748 - scraper - INFO - Fetching RSS feed for: Hürriyet (https://www.hurriyet.com.tr/rss/anasayfa)
+2026-07-23 20:52:05,074 - scraper - INFO - Successfully fetched 69 items from Hürriyet
+2026-07-23 20:52:05,077 - scraper - INFO - Fetching RSS feed for: Milliyet (https://www.milliyet.com.tr/rss/rssNew/gundemRss.xml)
+2026-07-23 20:52:05,643 - scraper - INFO - Successfully fetched 20 items from Milliyet
+2026-07-23 20:52:05,644 - scraper - INFO - Fetching RSS feed for: Cumhuriyet (https://www.cumhuriyet.com.tr/rss/son_dakika.xml)
+2026-07-23 20:52:06,034 - scraper - INFO - Successfully fetched 100 items from Cumhuriyet
+2026-07-23 20:52:06,037 - scraper - INFO - Fetching RSS feed for: Yeni Şafak (https://www.yenisafak.com/rss?xml=gundem)
+2026-07-23 20:52:06,186 - scraper - INFO - Successfully fetched 20 items from Yeni Şafak
+2026-07-23 20:52:06,188 - scraper - INFO - Fetching RSS feed for: Yeni Akit (https://www.yeniakit.com.tr/rss/haber/gundem.xml)
+2026-07-23 20:52:06,530 - scraper - WARNING - No entries found for Yeni Akit
+2026-07-23 20:52:06,531 - scraper - INFO - Fetching RSS feed for: Sözcü (https://www.sozcu.com.tr/feeds-son-dakika)
+2026-07-23 20:52:06,861 - scraper - INFO - Successfully fetched 23 items from Sözcü
+2026-07-23 20:52:06,863 - scraper - INFO - Fetching RSS feed for: Habertürk (https://www.haberturk.com/rss)
+2026-07-23 20:52:07,279 - scraper - INFO - Successfully fetched 100 items from Habertürk
+2026-07-23 20:52:07,281 - scraper - INFO - Fetching RSS feed for: Bloomberg HT (https://www.bloomberght.com/rss)
+2026-07-23 20:52:07,414 - scraper - INFO - Successfully fetched 20 items from Bloomberg HT
+2026-07-23 20:52:07,416 - scraper - INFO - Fetching RSS feed for: NTV (https://www.ntv.com.tr/gundem.rss)
+2026-07-23 20:52:07,838 - scraper - INFO - Successfully fetched 20 items from NTV
+2026-07-23 20:52:07,840 - scraper - INFO - Fetching RSS feed for: Sabah (https://www.sabah.com.tr/rss/anasayfa.xml)
+2026-07-23 20:52:08,208 - scraper - INFO - Successfully fetched 10 items from Sabah
+2026-07-23 20:52:08,211 - scraper - INFO - Fetching RSS feed for: CNN Türk (https://www.cnnturk.com/feed/rss/all/news)
+2026-07-23 20:52:08,613 - scraper - INFO - Successfully fetched 35 items from CNN Türk
+2026-07-23 20:52:08,615 - scraper - INFO - Fetching RSS feed for: US Media (https://news.google.com/rss/search?q=site:nytimes.com+OR+site:washingtonpost.com+OR+site:cnn.com+OR+site:wsj.com+OR+site:bloomberg.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 20:52:09,364 - scraper - INFO - Successfully fetched 100 items from US Media
+2026-07-23 20:52:09,366 - scraper - INFO - Fetching RSS feed for: UK Media (https://news.google.com/rss/search?q=site:theguardian.com+OR+site:thetimes.co.uk+OR+site:ft.com+OR+site:independent.co.uk+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 20:52:10,329 - scraper - INFO - Successfully fetched 100 items from UK Media
+2026-07-23 20:52:10,331 - scraper - INFO - Fetching RSS feed for: BBC (http://feeds.bbci.co.uk/news/world/rss.xml)
+2026-07-23 20:52:11,062 - scraper - INFO - Successfully fetched 0 items from BBC
+2026-07-23 20:52:11,063 - scraper - INFO - Fetching RSS feed for: Reuters (https://news.google.com/rss/search?q=site:reuters.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 20:52:11,786 - scraper - INFO - Successfully fetched 100 items from Reuters
+2026-07-23 20:52:11,786 - scraper - INFO - Fetching RSS feed for: Germany Media (https://news.google.com/rss/search?q=site:dw.com+OR+site:spiegel.de+OR+site:zeit.de+OR+site:welt.de+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 20:52:12,544 - scraper - INFO - Successfully fetched 100 items from Germany Media
+2026-07-23 20:52:12,545 - scraper - INFO - Fetching RSS feed for: Spain Media (https://news.google.com/rss/search?q=site:elpais.com+OR+site:elmundo.es+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 20:52:13,325 - scraper - INFO - Successfully fetched 100 items from Spain Media
+2026-07-23 20:52:13,328 - scraper - INFO - Fetching RSS feed for: Italy Media (https://news.google.com/rss/search?q=site:corriere.it+OR+site:repubblica.it+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 20:52:13,764 - scraper - INFO - Successfully fetched 20 items from Italy Media
+2026-07-23 20:52:13,766 - scraper - INFO - Fetching RSS feed for: France Media (https://news.google.com/rss/search?q=site:lemonde.fr+OR+site:lefigaro.fr+OR+site:france24.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 20:52:14,416 - scraper - INFO - Successfully fetched 100 items from France Media
+2026-07-23 20:52:14,418 - scraper - INFO - Fetching RSS feed for: Greece Media (https://news.google.com/rss/search?q=site:ekathimerini.com+OR+site:tovima.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 20:52:15,184 - scraper - INFO - Successfully fetched 100 items from Greece Media
+2026-07-23 20:52:15,185 - scraper - INFO - Fetching RSS feed for: Israel Media (https://news.google.com/rss/search?q=site:haaretz.com+OR+site:jpost.com+OR+site:timesofisrael.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 20:52:16,161 - scraper - INFO - Successfully fetched 100 items from Israel Media
+2026-07-23 20:52:16,162 - scraper - INFO - Fetching RSS feed for: Russia Media (https://news.google.com/rss/search?q=site:rt.com+OR+site:tass.com+OR+site:sputniknews.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 20:52:16,929 - scraper - INFO - Successfully fetched 100 items from Russia Media
+2026-07-23 20:52:16,930 - scraper - INFO - Fetching RSS feed for: Iran Media (https://news.google.com/rss/search?q=site:presstv.ir+OR+site:irna.ir+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 20:52:17,567 - scraper - INFO - Successfully fetched 100 items from Iran Media
+2026-07-23 20:52:17,568 - scraper - INFO - Fetching RSS feed for: China Media (https://news.google.com/rss/search?q=site:xinhuanet.com+OR+site:cgtn.com+OR+site:scmp.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 20:52:18,322 - scraper - INFO - Successfully fetched 100 items from China Media
+2026-07-23 20:52:18,324 - scraper - INFO - Fetching RSS feed for: Sweden Media (https://news.google.com/rss/search?q=site:svt.se+OR+site:dn.se+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 20:52:18,656 - scraper - INFO - Successfully fetched 3 items from Sweden Media
+2026-07-23 20:52:18,659 - scraper - INFO - Fetching RSS feed for: Norway Media (https://news.google.com/rss/search?q=site:nrk.no+OR+site:aftenposten.no+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 20:52:19,016 - scraper - INFO - Successfully fetched 8 items from Norway Media
+2026-07-23 20:52:19,017 - scraper - INFO - Fetching RSS feed for: Denmark Media (https://news.google.com/rss/search?q=site:dr.dk+OR+site:politiken.dk+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 20:52:19,405 - scraper - INFO - Successfully fetched 13 items from Denmark Media
+2026-07-23 20:52:19,407 - scraper - INFO - Fetching RSS feed for: Google News Global (https://news.google.com/rss/search?q=Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 20:52:20,157 - scraper - INFO - Successfully fetched 100 items from Google News Global
+2026-07-23 20:52:20,160 - scraper - INFO - Scraping completed. Total aggregated articles: 1738
+2026-07-23 20:52:20,160 - Orchestrator - INFO - Step 1: Scraped 1738 raw news articles.
+2026-07-23 20:52:20,160 - Orchestrator - INFO - Filtering news to only keep the last 2 days...
+2026-07-23 20:52:20,161 - Orchestrator - INFO - Date filtering: 1045 articles excluded. 693 articles remaining.
+2026-07-23 20:52:20,162 - Orchestrator - INFO - Pre-deduplication: 677 unique articles out of 693 remaining.
+2026-07-23 20:52:20,162 - Orchestrator - INFO - Limit capping: 577 unique articles will be excluded because of analysis limit (100).
+2026-07-23 20:52:20,162 - Orchestrator - INFO - Step 2: Sending articles to Gemini API for analysis (limit: 100)...
+2026-07-23 20:52:20,164 - analyzer - INFO - Loaded category limits from environment: Genel=25, Savunma=20, Spor=20, Dünya=35
+2026-07-23 20:52:20,166 - analyzer - INFO - Pre-deduplication filtered raw articles from 693 down to 677 unique titles.
+2026-07-23 20:52:20,166 - analyzer - INFO - Unique articles: local=469, global=208
+2026-07-23 20:52:20,166 - analyzer - INFO - Capped input to top 100 articles: kept 38 local and 62 global unique items.
+2026-07-23 20:52:20,166 - analyzer - INFO - Sending 100 unique articles to Gemini API...
+2026-07-23 20:52:20,168 - analyzer - INFO - Calling Gemini API (models/gemini-flash-lite-latest) - Attempt 1/3...
+2026-07-23 20:52:30,920 - analyzer - INFO - Gemini analysis complete. Categories: Genel: 13, Savunma: 2, Spor: 1, Dünya: 4
+2026-07-23 20:52:30,921 - Orchestrator - INFO - Step 2: Analysis completed. Categorized 20 unique summarized articles.
+2026-07-23 20:52:30,922 - Orchestrator - INFO - Step 3: Generating PDF document...
+2026-07-23 20:52:30,923 - pdf_generator - INFO - Starting PDF generation for date: 23.07.2026
+2026-07-23 20:52:30,924 - weasyprint.progress - INFO - Step 1 - Fetching and parsing HTML - HTML string
+2026-07-23 20:52:31,000 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 20:52:31,002 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap
+2026-07-23 20:52:32,629 - weasyprint.progress - INFO - Step 3 - Applying CSS
+2026-07-23 20:52:32,638 - weasyprint.progress - INFO - Step 4 - Creating formatting structure
+2026-07-23 20:52:32,649 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 1
+2026-07-23 20:52:32,716 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 2
+2026-07-23 20:52:32,741 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 3
+2026-07-23 20:52:32,769 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 4
+2026-07-23 20:52:32,824 - weasyprint.progress - INFO - Step 6 - Creating PDF
+2026-07-23 20:52:32,962 - weasyprint.progress - INFO - Step 7 - Adding PDF metadata
+2026-07-23 20:52:33,031 - pdf_generator - INFO - Successfully generated PDF at: C:\Projelerim\HaberOzetleri\Haber Ozeti 2026.07.23.pdf
+2026-07-23 20:52:33,031 - Orchestrator - INFO - Step 3: PDF generated successfully at: C:\Projelerim\HaberOzetleri\Haber Ozeti 2026.07.23.pdf
+2026-07-23 20:52:33,031 - Orchestrator - INFO - Step 4: Skipped email sending (flag --skip-email active). PDF file retained for local review.
+2026-07-23 20:52:33,031 - Orchestrator - INFO - =========================================
+2026-07-23 20:52:33,031 - Orchestrator - INFO - Pipeline finished successfully in 29.10 seconds.
+2026-07-23 20:52:33,031 - Orchestrator - INFO - =========================================
+2026-07-23 22:36:38,889 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 22:36:39,061 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 22:36:39,064 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 22:36:39,526 - Orchestrator - INFO - =========================================
+2026-07-23 22:36:39,527 - Orchestrator - INFO - Starting Daily News Summary Report Pipeline
+2026-07-23 22:36:39,527 - Orchestrator - INFO - =========================================
+2026-07-23 22:36:39,527 - Orchestrator - INFO - Step 1: Scraping all RSS feeds...
+2026-07-23 22:36:39,528 - scraper - INFO - Fetching RSS feed for: TRT Haber (https://www.trthaber.com/sondakika.rss)
+2026-07-23 22:36:40,126 - scraper - INFO - Successfully fetched 50 items from TRT Haber
+2026-07-23 22:36:40,129 - scraper - INFO - Fetching RSS feed for: AA (https://www.aa.com.tr/tr/rss/default?cat=guncel)
+2026-07-23 22:36:40,393 - scraper - INFO - Successfully fetched 23 items from AA
+2026-07-23 22:36:40,396 - scraper - INFO - Fetching RSS feed for: Hürriyet (https://www.hurriyet.com.tr/rss/anasayfa)
+2026-07-23 22:36:40,858 - scraper - INFO - Successfully fetched 70 items from Hürriyet
+2026-07-23 22:36:40,861 - scraper - INFO - Fetching RSS feed for: Milliyet (https://www.milliyet.com.tr/rss/rssNew/gundemRss.xml)
+2026-07-23 22:36:41,166 - scraper - INFO - Successfully fetched 20 items from Milliyet
+2026-07-23 22:36:41,168 - scraper - INFO - Fetching RSS feed for: Cumhuriyet (https://www.cumhuriyet.com.tr/rss/son_dakika.xml)
+2026-07-23 22:36:41,884 - scraper - INFO - Successfully fetched 100 items from Cumhuriyet
+2026-07-23 22:36:41,886 - scraper - INFO - Fetching RSS feed for: Yeni Şafak (https://www.yenisafak.com/rss?xml=gundem)
+2026-07-23 22:36:42,103 - scraper - INFO - Successfully fetched 20 items from Yeni Şafak
+2026-07-23 22:36:42,105 - scraper - INFO - Fetching RSS feed for: Yeni Akit (https://www.yeniakit.com.tr/rss/haber/gundem.xml)
+2026-07-23 22:36:42,466 - scraper - WARNING - No entries found for Yeni Akit
+2026-07-23 22:36:42,467 - scraper - INFO - Fetching RSS feed for: Sözcü (https://www.sozcu.com.tr/feeds-son-dakika)
+2026-07-23 22:36:42,898 - scraper - INFO - Successfully fetched 23 items from Sözcü
+2026-07-23 22:36:42,900 - scraper - INFO - Fetching RSS feed for: Habertürk (https://www.haberturk.com/rss)
+2026-07-23 22:36:43,180 - scraper - INFO - Successfully fetched 100 items from Habertürk
+2026-07-23 22:36:43,182 - scraper - INFO - Fetching RSS feed for: Bloomberg HT (https://www.bloomberght.com/rss)
+2026-07-23 22:36:43,368 - scraper - INFO - Successfully fetched 20 items from Bloomberg HT
+2026-07-23 22:36:43,370 - scraper - INFO - Fetching RSS feed for: NTV (https://www.ntv.com.tr/gundem.rss)
+2026-07-23 22:36:43,776 - scraper - INFO - Successfully fetched 20 items from NTV
+2026-07-23 22:36:43,778 - scraper - INFO - Fetching RSS feed for: Sabah (https://www.sabah.com.tr/rss/anasayfa.xml)
+2026-07-23 22:36:44,086 - scraper - INFO - Successfully fetched 10 items from Sabah
+2026-07-23 22:36:44,089 - scraper - INFO - Fetching RSS feed for: CNN Türk (https://www.cnnturk.com/feed/rss/all/news)
+2026-07-23 22:36:44,344 - scraper - INFO - Successfully fetched 35 items from CNN Türk
+2026-07-23 22:36:44,346 - scraper - INFO - Fetching RSS feed for: US Media (https://news.google.com/rss/search?q=site:nytimes.com+OR+site:washingtonpost.com+OR+site:cnn.com+OR+site:wsj.com+OR+site:bloomberg.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:36:45,201 - scraper - INFO - Successfully fetched 100 items from US Media
+2026-07-23 22:36:45,203 - scraper - INFO - Fetching RSS feed for: UK Media (https://news.google.com/rss/search?q=site:theguardian.com+OR+site:thetimes.co.uk+OR+site:ft.com+OR+site:independent.co.uk+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:36:46,092 - scraper - INFO - Successfully fetched 100 items from UK Media
+2026-07-23 22:36:46,093 - scraper - INFO - Fetching RSS feed for: BBC (http://feeds.bbci.co.uk/news/world/rss.xml)
+2026-07-23 22:36:46,589 - scraper - INFO - Successfully fetched 0 items from BBC
+2026-07-23 22:36:46,591 - scraper - INFO - Fetching RSS feed for: Reuters (https://news.google.com/rss/search?q=site:reuters.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:36:47,350 - scraper - INFO - Successfully fetched 100 items from Reuters
+2026-07-23 22:36:47,351 - scraper - INFO - Fetching RSS feed for: Germany Media (https://news.google.com/rss/search?q=site:dw.com+OR+site:spiegel.de+OR+site:zeit.de+OR+site:welt.de+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:36:48,133 - scraper - INFO - Successfully fetched 100 items from Germany Media
+2026-07-23 22:36:48,134 - scraper - INFO - Fetching RSS feed for: Spain Media (https://news.google.com/rss/search?q=site:elpais.com+OR+site:elmundo.es+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:36:48,936 - scraper - INFO - Successfully fetched 100 items from Spain Media
+2026-07-23 22:36:48,937 - scraper - INFO - Fetching RSS feed for: Italy Media (https://news.google.com/rss/search?q=site:corriere.it+OR+site:repubblica.it+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:36:49,638 - scraper - INFO - Successfully fetched 20 items from Italy Media
+2026-07-23 22:36:49,639 - scraper - INFO - Fetching RSS feed for: France Media (https://news.google.com/rss/search?q=site:lemonde.fr+OR+site:lefigaro.fr+OR+site:france24.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:36:50,483 - scraper - INFO - Successfully fetched 100 items from France Media
+2026-07-23 22:36:50,486 - scraper - INFO - Fetching RSS feed for: Greece Media (https://news.google.com/rss/search?q=site:ekathimerini.com+OR+site:tovima.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:36:51,259 - scraper - INFO - Successfully fetched 100 items from Greece Media
+2026-07-23 22:36:51,261 - scraper - INFO - Fetching RSS feed for: Israel Media (https://news.google.com/rss/search?q=site:haaretz.com+OR+site:jpost.com+OR+site:timesofisrael.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:36:52,018 - scraper - INFO - Successfully fetched 100 items from Israel Media
+2026-07-23 22:36:52,020 - scraper - INFO - Fetching RSS feed for: Russia Media (https://news.google.com/rss/search?q=site:rt.com+OR+site:tass.com+OR+site:sputniknews.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:36:52,853 - scraper - INFO - Successfully fetched 100 items from Russia Media
+2026-07-23 22:36:52,855 - scraper - INFO - Fetching RSS feed for: Iran Media (https://news.google.com/rss/search?q=site:presstv.ir+OR+site:irna.ir+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:36:53,587 - scraper - INFO - Successfully fetched 100 items from Iran Media
+2026-07-23 22:36:53,589 - scraper - INFO - Fetching RSS feed for: China Media (https://news.google.com/rss/search?q=site:xinhuanet.com+OR+site:cgtn.com+OR+site:scmp.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:36:54,425 - scraper - INFO - Successfully fetched 100 items from China Media
+2026-07-23 22:36:54,427 - scraper - INFO - Fetching RSS feed for: Sweden Media (https://news.google.com/rss/search?q=site:svt.se+OR+site:dn.se+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:36:54,854 - scraper - INFO - Successfully fetched 3 items from Sweden Media
+2026-07-23 22:36:54,857 - scraper - INFO - Fetching RSS feed for: Norway Media (https://news.google.com/rss/search?q=site:nrk.no+OR+site:aftenposten.no+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:36:55,703 - scraper - INFO - Successfully fetched 7 items from Norway Media
+2026-07-23 22:36:55,705 - scraper - INFO - Fetching RSS feed for: Denmark Media (https://news.google.com/rss/search?q=site:dr.dk+OR+site:politiken.dk+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:36:56,104 - scraper - INFO - Successfully fetched 13 items from Denmark Media
+2026-07-23 22:36:56,106 - scraper - INFO - Fetching RSS feed for: Google News Global (https://news.google.com/rss/search?q=Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:36:56,926 - scraper - INFO - Successfully fetched 100 items from Google News Global
+2026-07-23 22:36:56,928 - scraper - INFO - Scraping completed. Total aggregated articles: 1734
+2026-07-23 22:36:56,929 - Orchestrator - INFO - Step 1: Scraped 1734 raw news articles.
+2026-07-23 22:36:56,937 - Orchestrator - INFO - Filtering news to only keep the last 2 days...
+2026-07-23 22:36:56,939 - Orchestrator - INFO - Date filtering: 1036 articles excluded. 698 articles remaining.
+2026-07-23 22:36:56,949 - Orchestrator - INFO - Pre-deduplication: 684 unique articles out of 698 remaining.
+2026-07-23 22:36:56,950 - Orchestrator - INFO - Limit capping: 0 unique articles will be excluded because of analysis limit (800).
+2026-07-23 22:36:56,950 - Orchestrator - INFO - Step 2: Sending articles to Gemini API for analysis (limit: 800)...
+2026-07-23 22:36:56,961 - analyzer - INFO - Loaded category limits from environment: Genel=25, Savunma=20, Spor=20, Dünya=35
+2026-07-23 22:36:56,962 - analyzer - INFO - Pre-deduplication filtered raw articles from 698 down to 684 unique titles.
+2026-07-23 22:36:56,963 - analyzer - INFO - Unique articles: local=468, global=216
+2026-07-23 22:36:56,970 - analyzer - INFO - Sending 684 unique articles to Gemini API...
+2026-07-23 22:36:56,979 - analyzer - INFO - Calling Gemini API (models/gemini-flash-lite-latest) - Attempt 1/3...
+2026-07-23 22:37:17,524 - analyzer - WARNING - Attempt 1/3 failed to decode JSON from Gemini API response: Unterminated string starting at: line 185 column 13 (char 17355)
+2026-07-23 22:37:17,526 - analyzer - WARNING - Raw response text: {
+  "dunya_basininda_turkiye": [
+    {
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNktENW9HNXFmV2JDUXhjSXR4bFY0X3FGQTB6YlVMS3JMY1c2eXoyVUpqSFUxWHAyQVlwWk9Pc2pzZzdkR2hYWGlva0NMUnhITGxkNDZWUlpSdlJTNENtZ2ZGZ3p6UERyejVjS0tPYmdPOHk4RWNNREdia2hBa3JPWlhrMU9mU196UUhIYlRxeGtYeG04QUt4V0duSWlpdDI0a0dpb3VWNmRoLVhpYWpVd1JSRTBDUQ?oc=5",
+    "pub_date": "22.07.2026 14:09",
+    "source": "Bloomberg.com",
+    "summary": "Küresel basın organlarında yer alan analizlere göre, Orta Doğu'daki çatışma ortamının ve artan jeopolitik risklerin etkisiyle Türkiye'de dezenflasyon sürecinin yavaşladığı ve merkez bankasının faiz politikasını koruyacağı öngörülüyor.",
+    "title": "Küresel Basın: Türkiye'nin Enflasyonla Mücadelesi Bölgesel Savaş Tehdidi Altında"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPenJnRVc3eFA0czRKNFg2TzNWTXVyaC0wYVF4bnpXd0hFcXV4NTlpUHo0a2IyRWUxbVV5NXBJZWR2ZUt4WHUyV3lPUVlhSjFmVzZuTk5sYWpMUHJFSnVzbDMySl9vd2tLc0pnZXpHV0t6OGFwRGgwc3BBdUIxOG55a25xbHZfQk84VUxVb2JXZ0FtN2xVeGxtUmRIamdiS2I2QlJEQmRaaFJMLWFTU0tuTG00Y2d3dFFPRXZjZ1ZHR1NZS05oYWJkaFRHX2drclRnUzVncA?oc=5",
+    "pub_date": "22.07.2026 00:47",
+    "source": "The Washington Post",
+    "summary": "Batı medyası, Türkiye siyasetinde muhalefet kanadında yaşanan yeni oluşum girişimlerini ve Cumhurbaşkanı Erdoğan'a karşı atılan stratejik adımları geniş bir şekilde okuyucularına aktarıyor.",
+    "title": "Washington Post: Türkiye'de Muhalefet Erdoğan'a Karşı Yeni Bir Parti Kurma Hazırlığında"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNVFpUeDlJMWl1X2t4RTJIZW5IMFZzNmxXc1lRb3otM2pXZTBHY2J3emJSdjlkTDA4aTcwQjlXSVgwS1Q4SDNKdDA0M3J5RWZUWE1NdEktc0haMHZJT25rN1hTT3YtYWNtZXFvZmZpOWtDQ3pmNHRzNUttN0Y5bDJiZVhENnhvUEZwTzZ1V3cyRVg2TzVkMUZqLXFVTmxpb21HaWd3U2NFR1VzRUNiWGhpckg0WUF3QUdzcTdsQkdhNHlwZ0dfb21aR3N2NXZEOVZFWkc0cnJQdW1FeVgtN2dEb2pqbElSTGs?oc=5",
+    "pub_date": "22.07.2026 20:45",
+    "source": "eKathimerini.com",
+    "summary": "ABD Dışişleri Bakanlığı'nın Kongre'ye sunduğu raporda, Türkiye'nin mevcut hukuki ve siyasi şartlar altında F-35 programına yeniden dahil olma koşullarını henüz karşılamadığı ifade edildi.",
+    "title": "Yunan Basını: ABD, Türkiye'nin F-35 Programına Dönüş Koşullarını Sağlamadığını Bildirdi"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE16aGRjVF96bEJLMlBmR1kxVmJQc2F1Wk5qNEk0eXlMRzBDYWthRDlmdnYxNVV2bUVOTkdkNVl0ZW41TmZxSHVfTmtidzdnQWlBb1d5WlAyU2R5QzZPaHhsS1d2SE1oQUk?oc=5",
+    "pub_date": "22.07.2026 21:36",
+    "source": "Reuters",
+    "summary": "Türkiye'nin güneybatısındaki ormanlık alanlarda etkili olan yangınlara karşı havadan ve karadan yoğun bir söndürme mücadelesi yürütüldüğü uluslararası ajanslar tarafından duyuruldu.",
+    "title": "Reuters: Türkiye'nin Güneyinde Orman Yangınlarına Müdahale Sürüyor"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOVkxVNXRDYVVibDJwYVNWbU5mV0pTclRtb2Q3QUxEVlZLMzRkcTdJNUlwajVIWWpsUk1FNi1UTlZDMi0tT2V4MU9mLWZvYXVwbkNveXpwZHJNeG94aGFzVWlsOEhBYXJVd3hjbFp1TUtUWm5PRXV2WlRBZkhLdXRUTW9fUWhnWlczT0lfVXMtUml6QkxibDNMYUlrTzFqSnJFbTZIUVNwSXRMREJudHk5VE1MaTFnMENYa2gtS1AzclNuamM2NmJGNnZRVEU0UQ?oc=5",
+    "pub_date": "22.07.2026 17:14",
+    "source": "Reuters",
+    "summary": "Alman hükûmetinin, Deutsche Welle muhabirinin Türkiye'de yeniden gözaltına alınmasından duyduğu rahatsızlığı ve rahatsızlık yaratan süreci yakından takip ettiğini belirttiği bildirildi.",
+    "title": "Alman Basını: Berlin Yönetimi DW Muhabirinin Türkiye'de Gözaltına Alınmasından Rahatsız"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0zUDhGNDNoZUcwSUIwT21rcjJKNWNTYW1feEc4dU5BcS1acm5JWjk4LUJadTczald2dVdmbldOb2NrX2VwbHl1OGp2MFAwak1nNU1oVWNTeVdjc1pM?oc=5",
+    "pub_date": "23.07.2026 14:04",
+    "source": "The Jerusalem Post",
+    "summary": "İsrail basınında yer alan bazı iddialarda, Türkiye'nin Orta Doğu'daki diplomatik ve stratejik etkisini artırarak bölgesel bir güç denklemi kurmaya çalıştığı öne sürüldü.",
+    "title": "Jerusalem Post: Türkiye Orta Doğu'daki Etkisini Genişletiyor"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPczlHOEhOU1BFTjU3M2phN3JXVl9oNFNuWEFjRGZ1WndpcXZWWEplelZEUlY1Q1pXNHp0ZkRLY0NONElyMVJGUVN3dFlUZ3ltVnBXUGR0b21yUW5mQWRYaHdBekVuT19yYk1UdENUSEJBZDF1ejU2dTJwYkhhMERYanBRZHlORGlWLV9ZYWdFcmZDbHB3QjdhLVlOckFVbjdiZ25TUTI3UThzRXJ0NzdVTjZ4RkRKS09kcUQyUDYyNXE0elFsVVpJMWtmZ0VfdWlOUnl2NzJNU2sxajF3UXJMY3E5U0FBRVdSOXp1dXJwNTdLeXAxcWtLazBuWkZreF9fUWtCbUE3TUF0NlJZcC12aGFEOA?oc=5",
+    "pub_date": "22.07.2026 22:47",
+    "source": "Haaretz",
+    "summary": "Haaretz'de yayımlanan bir analizde, ABD'nin Suudi Arabistan'la yaptığı nükleer anlaşma ve Türkiye'ye yönelik olası savunma adımlarının İsrail siyasetinde huzursuzluk yarattığı vurgulandı.",
+    "title": "Haaretz Analizi: Trump'ın Suudi Arabistan Anlaşması ve Türkiye Adımları İsrail'i Tedirgin Ediyor"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOaFJpeTdzYnpHZ3N2NjMwengtX1FxLU9wZElQck4yZUlNWE9kMmRRdjNNYnliamRIeTRubnVBWm9faFk3UVc5WWljUlV3dWlYQ1RwanM1eUJSUHctcV9PdHpnTDVBX0stQ0lqMjNRVDNHUGU3VUllZDJPTGdpeHJJZnEyT2ZNcF9IMTFpX1pIMzVmaXJZUXRRT29ZQWdDaFdwalVkME5DMko?oc=5",
+    "pub_date": "23.07.2026 18:52",
+    "source": "eKathimerini.com",
+    "summary": "Türkiye'de bir valinin bisiklet taytlı fotoğrafları nedeniyle görevden alınması, sosyal medyada geniş yankı uyandırırken uluslararası basının da dikkatini çekti.",
+    "title": "Yunan Basını: Türkiye'de Bir Vali Bisiklet Kıyafeti Nedeniyle Görevden Alındı"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1JRkNIZmZJR3A5VFBQaVhSdGZneHNhLTZCcnI3TFFfRXZhU2d0MFhZUzQ3ZjItb0RKdkJfeVdUQzNaa3E5NkdyZFd5M21UelVMdWVNU3hHcWowRlpLWkgtdXNHVzU2OXlEZVFtaHRn?oc=5",
+    "source": "The Jerusalem Post",
+    "summary": "İsrail ordusunun, Türkiye ile artan jeopolitik gerilimler ve olası deniz güvenliği riskleri nedeniyle donanmasını anti-submariner (denizaltı savunma) uçaklarıyla güçlendirmeyi planladığı bildirildi.",
+    "title": "İsrail Basını: Türkiye ile Artan Gerilimler Sonrası İsrail Donanmasını Güçlendiriyor"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQXZlVVlMVUY2azVyLVdQVFlueU5tY1NvTHJBc0pfbWtqZnZDd0tSclZBZ0R3WXEzZHBrSnNjU1JZQTMzTFBOLVBWRG1PZThSN3g4VzlaT2pOVllxdF9XSHZENTJjOVRWd3dzdGN4VkdfSlczb3dORjRjeUFjS2JveEl4RFJoQnZvVUZYcFhQX3VZMnQtc0FwWUhuOXEwZE9YUF9zZjRkckdfWVJxTFhRbQ?oc=5",
+    "pub_date": "23.07.2026 16:42",
+    "source": "Stratejik Düşünce Enstitüsü",
+    "summary": "Ankara'da gerçekleştirilen NATO zirvesinin ardından Türkiye'nin uluslararası güvenlik mimarisindeki ağırlığının arttığına ve caydırıcı rolünün pekiştiğine dikkat çekildi.",
+    "title": "Stratejik Analiz: NATO Zirvesi ve Türkiye'nin Güçlenen Güvenlik Rolü"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFB2WUVjeFM4a20wVWxMQjlQeXhQYzBMLV9hSFhvZFpiTmJHZ2RQV2FnOWIzVk4wTjNzeE02QXJKTG5XNVliYllpaDRQclPSAVJBVV95cUxNUnR4eFl2aDk0a1JTdE9XYWpkQ0JUSzRQdkdNYjcxMVVVSWQyRm83amdqYlo2bFh0LUJ2NEhoaTJFcnhyWHlHQmNsNVRmTUxwcjFn?oc=5",
+    "pub_date": "23.07.2026 14:53",
+    "source": "tass.com",
+    "summary": "Rus haber ajansı TASS, Rusya'dan hareket eden Türk bayraklı bir kargo gemisinin Karadeniz'de füze veya saldırı hedefi olması sonucu 1 mürettebatın hayatını kaybettiğini, 3 kişinin yaralandığını bildirdi.",
+    "title": "TASS: Karadeniz'de Rusya'dan Gelen Türk Kargo Gemisi Vuruldu, 1 Ölü"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUEl1WUpHVDliT0YwcnFKN1ZxQ1VJT19LMWd6Z25ZVDRfYjVFampXNldnN0IzUEhfRlpvY2UwQUYxdWRpZzNqVDRfWUYzeklIanBnNkplS09XbU4wTkhxT29hYlZ4eVNUWnpPaTJacE9xRF9tMFVvWlp5Wmd4OE1KZlJsTEhNY3BmRmZEQ1B5QS11dktOeWhybA?oc=5",
+    "pub_date": "23.07.2026 14:46",
+    "source": "Bianet",
+    "summary": "A Milli Kadın Voleybol Takımı'nın Milletler Ligi çeyrek finalinde Kanada'yı mağlup ederek yarı finale yükselmesi uluslararası spor platformlarında geniş yankı uyandırdı.",
+    "title": "Uluslararası Basın: Filenin Sultanları VNL Yarı Finalinde"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNW1sWEZ2bWdRbmFRTUNoblZJS1FLMTBycW16S2ZOUXR3MFhCTnVwWUxDM0N4aFBUNnZQR1FNVWRzeTdrbFpiVGNya3hoWlpEU3EyeDZKT3laX0N1RkRGaXNXZWhJdFNhZHBaM0w5RkJYSFg3VS1zZlVxTC0tdHpYNGRZbTlWRkJCOXhmT3pqc3FXNWxKWDRleVYxRjZyRzdQZ0Nkd1lsY3huRjVLdVRwbmlfc2VoTTE3T1BnOWRKWk03U0VzdVVyUkVFblFZcmFJakFn0gHYAUFVX3lxTE9nd1U1STRLMUgxV1F6d2RoeWRZSEwxVjNpR0s5LXhuYUFaNU5sTmc3OEJnZkxpamF5Si1LY05obVJmVE9KT3dkVzgxM2ZQT2RpTF9iTFpRMnFldWdWU1E5S1A0bWIwVTN1ZWtJNDJfRTZzbDdMbkVvUHpKWDVGbllKUFZyMnFtMmJfTnFlMENmVHdMWFlpeEFsQlkxUkRVeTlEWDNXYlRzYlVKd1lLbzFwdlRCdWc4NHh1T0VQaVdqNElHYnZGaVRtNzRoeXdFdl96YndzLWdmbA?oc=5",
+    "pub_date": "23.07.2026 16:02",
+    "source": "Devdiscourse",
+    "summary": "Dünya Bankası raporuna göre, yapay zeka teknolojilerinin Türkiye'deki istihdam piyasasını kısa vadede tamamen dönüştürmeyeceği ancak iş gücü reformlarının hızla hayata geçirilmesi gerektiği vurgulandı.",
+    "title": "Dünya Bankası: Türkiye'de İş Gücü Reformları Yapay Zeka İçin Bekleyemez"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPZVRpMldxZWZTbW5ycndGUG9PcGh5YkcwZGRDSkxSc3BsS3I0SFJ3c2UzM2hJZkQ1RnNJVmJzZTZ3WFJJcTJiNFhxanVCRk90dkYtbnFISDFwQXllbFFpZ0hkTWJEQk5aQ3pWdFM0aGNyQUM4eUJOU0Z6dmZQdXIteQ?oc=5",
+    "pub_date": "23.07.2026 18:35",
+    "source": "Yahoo News UK",
+    "summary": "İngiliz basınında yer alan seyahat uyarılarında, Türkiye'ye seyahat edecek turistlerin pasaport geçerlilik süreleri ve giriş kurallarına dikkat etmemeleri durumunda sınırda geri çevrilebileceği belirtildi.",
+    "title": "İngiliz Basını: Türkiye'ye Seyahat Edecekler İçin Katı Pasaport Kuralları Uyarısı"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVmtFRzVMY01wZ3hSYVZaM05xOXNNTWRsQklLZk52OTBPTlRkd0NDYmZwQXdlU0gtdFAwS0otVXI2MnBOUU1RU2ZDYWlHVHUzSW1Ra091d2poaF8taHZHMHJGTDdocVNJZlp0UWhwcTlLckne?oc=5",
+    "pub_date": "22.07.2026 05:12",
+    "source": "dw.com",
+    "summary": "Alman yayın kuruluşu DW, Türkiye'nin son yıllarda Afrika kıtasında yürüttüğü ekonomik, diplomatik ve insani projelerle sessiz ama etkili bir güç aktörüne dönüştüğünü analiz etti.",
+    "title": "Deutsche Welle: Türkiye Afrika'da Nasıl Sessiz Bir Güç Odağı Haline Geldi?"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUk5VVk1WVEd3ZmNYdGE0WFNYNW9UNVFCenNVXzFUd1hIX2J2QWRCd1JXSDBwUWFnZzJxd1FLb2ZiS2thRFRrVVRQT0tMblMySlNEODBuZUt4WF9XUTNOMDF5N1JwUWtkVUdmQl82Qko2cEtldFhpd1FvbWJ6U1BUU203SjlZalFZQ0x1Rl9nV2V4YXJrbUdTMG8xeldJWGlj?oc=5",
+    "pub_date": "22.07.2026 22:02",
+    "source": "dw.com",
+    "summary": "CHP içerisindeki gelişmeler ve Özgür Özel öncülüğünde kurulması planlanan yeni parti hareketi, Avrupa basınında Erdoğan'a karşı alternatif bir siyasi hamle olarak değerlendirildi.",
+    "title": "DW: Özgür Özel'in Yeni Parti Hamlesi Türkiye Siyasetinde Yeni Bir Dönem Başlatıyor"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9VX1M1ZnQyeWx4WkZNQmwtcXFNMFpuTjFacmxOODR2a1EtdTBEVE5pS1NJbVFwcC14cVNMWDlCWWZpNDh2WjBvZnRkUVhpZjVXSzR5bGRQdlNxbDBMMW9FUEY0VQ?oc=5",
+    "pub_date": "23.07.2026 14:49",
+    "source": "Arab News PK",
+    "summary": "Türkiye ile Suriye arasında kültür merkezleri ve ticari iş birliği alanında atılan adımların ardından iki ülke arasındaki ticaret hacminin 10 milyar dolara çıkarılmasının hedeflendiği açıklandı.",
+    "title": "Arab News: Türkiye Suriye ile Ticaret Hacmini 10 Milyar Dolara Çıkarmayı Hedefliyor"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOeEkzTDFnZHp1enJMRzdCQ3BCYk9XT3ZlXzkwV05zUXhrbWpxQTYyMEo2bnlhcDJJOWVLRU1tQkRQRV9kaEpWZm9aWVBGaUl1RllEX19IelZhYlhrT085dHhTNXNEVnBtX0c1TEN0eE4wYlZWY0dQSHBIQ0o0UzJBVF93VDdCaC1relk0dtIBjAFBVV95cUxOeEkzTDFnZHp1enJMRzdCQ3BCYk9XT3ZlXzkwV05zUXhrbWpxQTYyMEo2bnlhcDJJOWVLRU1tQkRQRV9kaEpWZm9aWVBGaUl1RllEX19IelZhYlhrT085dHhTNXNEVnBtX0c1TEN0eE4wYlZWY0dQSHBIQ0o0UzJBVF93VDdCaC1relk0dg?oc=5",
+    "pub_date": "22.07.2026 15:18",
+    "source": "dw.com",
+    "summary": "Türkiye'de yürütülen terörle mücadele ve yeni çözüm/çerçeve yasa tartışmaları uluslararası medyada barış ihtimali bağlamında masaya yatırıldı.",
+    "title": "DW Analizi: Türkiye'de Yeni Çerçeve Yasa ve Barış Süreci Mümkün mü?"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbVhueEQ1WVAyV1B2QWxDVlI0cTJXRE1zSWNFMXZ5R3FCeHpmV0ZDMTlkMlRsSGxHZzVjX1VhYVZyLW1NbXBjcFNFc1VSV0JySTdVUVNuOVh4UVV3MHBVemlmWlRNOUNTSlhsTGFaWWphMmhyVjJKQklYRlljMEFBYTF5NDJvLTNzRWdINE9jOVpGYVp3cDJQTF80ZTkzX3VvdzFCZ0lVNHhfY3NnZGNubVBB?oc=5",
+    "pub_date": "23.07.2026 11:02",
+    "source": "Opinio Juris",
+    "summary": "Hukuk portallarında yer alan makalelerde, Türkiye'nin İstanbul Sözleşmesi'nden çekilmesinin ardından kadın hakları ve ekonomik şiddetle mücadelede karşılaşılan zorluklar hukuki açıdan incelendi.",
+    "title": "Opinio Juris: İstanbul Sözleşmesi'nden Çekilme Sonrası Türkiye'de Ekonomik Şiddet"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWVpLQkh3ay1FS1haSG9Eak43ZlEyR1pLMExvbTd5Z0h6ZTVyT0ZvRnBNSTRKSjZvQ0k5b2dzZ25HMnFCTkF5U0NNNTk3RzJPQ1JqRUg3bGxsNmNSMEJnRjhpQUFMYVRnaW96UGdmMURDWThnRVdsYzk4S0IxV1RySm1BR3ZJcm9MMGtBbWE4dXV6U3E5X1RiX3JWN3RsOWVrSFRUVl9jMmV1dmRYQ3RHbg?oc=5",
+    "pub_date": "23.07.2026 10:45",
+    "source": "Bloomberg.com",
+    "summary": "Mısır diplomasisinin ABD ile İran arasındaki tırmanan krizi hafifletmek ve olası bir bölgesel çatışmayı önlemek için arabuluculuk faaliyetlerini hızlandırdığı bildirildi.",
+    "title": "Bloomberg: Mısır, ABD-İran Krizini Çözmek İçin Arabuluculuk Yürütüyor"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQRDAtVDgxRzhwVHlfb3dqRkJ3UnRzeG9SbmhsSlN6YnZvclR6TFc5RFotc05LOEJ6a3hvVy1McEtNa2dGUVJnMm02REh6QWxaanhmWTZad2l0dnR2WHhXeU54aS1ZSFJGQld2ajZ4RTZuTUZsdVJ6djR2d3BOTGVQRmtXS1EzT0xybnRhSzlfc1JDU0RZQlNwZk1raTkyS3kwUGdpUkM2U1dnTVl2OWMtdDlGNHEzVGpNNno0R2VWTzFQQQ?oc=5",
+    "pub_date": "23.07.2026 00:36",
+    "source": "WSJ",
+    "summary": "ABD Başkanı Donald Trump'ın Suudi Arabistan ile sivil nükleer alanda kapsamlı bir anlaşmayı onaylaması, Körfez bölgesindeki stratejik dengeler açısından büyük bir dönüm noktası olarak değerlendirildi.",
+    "title": "Wall Street Journal: Trump Suudi Arabistan ile Tarihi Nükleer Anlaşmayı Onayladı"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdzdtN2cxam5MWWZMNWNVS09UcjdFVEJYNGZVeXgtNmFhZkxqcGRBY3IzcDF2MGJoNF9ic3owb1NFYnNibENkOUExdXVmdFFEaEFYamRCY3VMNzFheVNWT3RrRm96TkhTeXRWdTlDam5aZTJvLW5jYmsxUTJJcnBJTVFVeHF3WFRRNGRObGljcnJjaERtMGwxdk5Uckc2QQ?oc=5",
+    "pub_date": "22.07.2026 16:35",
+    "source": "Middle East Eye",
+    "summary": "Middle East Eye'da yayımlanan bir değerlendirmede, Türkiye'deki muhalefet cephesinden çıkacak yeni partinin Cumhurbaşkanı Erdoğan karşısındaki şansı hem avantaj hem de riskler barındıran bir hamle olarak yorumlandı.",
+    "title": "Middle East Eye: Türkiye'deki Yeni Muhalefet Partisi Erdoğan İçin Ne Anlama Geliyor?"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMXFhOGpZS3hPNTdPU3JtTGtCenItbXFBRk4zXzN5c3RfbGgzSkFmSjF4VHRtUldVbGNFblktSmZOWjJIZmVhUEp6eWNyVDN2a3ZmbF9wNmpnODNmcmJmcl9yX3B3alR0dE56eTdfQjl2b2l0a3B3aDZpTkljZ1BwOHBSc2h3?oc=5",
+    "pub_date": "22.07.2026 19:28",
+    "source": "Reuters",
+    "summary": "Türkiye Rekabet Kurumu, İtalyan Saipem ile Subsea7'nin birleşme işlemine resmi onay verdiğini duyurdu.",
+    "title": "Reuters: Türkiye Rekabet Kurumu Saipem ve Subsea7 Birleşmesini Onayladı"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORVFmcndVRlpnZk84cG1MdjJ3bnBLTThobTlaUlFzdXRidHcxWkhjTzVtM1lvYnJxaHBERzBFN3lYcjVFMjFYY2V2NWU4bVFEb0M0c2RweFk5U3FDaGhYZE9rWHU0bkVqemlQU3JGZmtmN1hLUGJDaTR3aTlaWTFHZkNuYW1zWWl5VlVscVNhbTlNWWJRUGxORWVIcw?oc=5",
+    "pub_date": "23.07.2026 20:01",
+    "source": "Reuters",
+    "summary": "Avrupa Birliği'nin Rusya'ya karşı hazırladığı 21. yaptırım paketinde enerji kısıtlamaları, petrol fiyatı tavanı ve bankacılık kısıtlamalarının yer aldığı bildirildi.",
+    "title": "Reuters: AB'den Rusya'ya Yönelik 21. Yaptırım Paketi Detayları Netleşti"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPT1JZNDh5QXNNNEhQZGNKdFFhcFUxdmY4Vjd0bmhxWjBONDg1MEZMSEVuSmpZTE82NnhfVlNORlFCdExUZ3hmRW5nWTEtUVFVcUZJMW5jaW9oODNyRnpaeUJ0U09yd24wSDk1NVJyQWRyeFhyVXp0T01lQk56RXJLLURpalJXSGtmNkVyci1Td2o?oc=5",
+    "pub_date": "23.07.2026 00:22",
+    "source": "WSJ",
+    "summary": "Wall Street Journal'da yayımlanan bir görüş yazısında, ABD ile Suudi Arabistan arasında varılan nükleer zenginleştirme mutabakatının bölgesel silahlanma yarışını tetikleyebileceği uyarısında bulunuldu.",
+    "title": "WSJ Görüş: Suudi Arabistan'ın Nükleer Zenginleştirme Hamlesi Riskli Bir Hata"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUnVaX2NCcGJoU01vZ3k5ZWltZUx0Q1hKdDduNUZ0TXlrOVkyNE5abVBGS0hEN3E3ejlHYmZJQ2lpNHdrV3UwLXRvTEpZTHN6YmJCSFNNQ0d1T3A5NlgzY3hyQkRqX1FyUDNTRUxXQU94WV9MWV9UZk9GX0VEb2w5WVNTUVdDU2JZT2RhRmd5VVdsaFpm?oc=5",
+    "pub_date": "23.07.2026 03:12",
+    "source": "The New York Times",
+    "summary": "Yemen'deki Husilerin Kızıldeniz'de Suudi Arabistan'a ait iki petrol tankerini hedef aldıklarını duyurması, küresel enerji arzı endişelerini artırdı.",
+    "title": "New York Times: Husiler Kızıldeniz'de Suudi Petrol Tankerlerini Vurduğunu Açıkladı"
+  },
+  {
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdzk0TE45Y
+2026-07-23 22:37:17,543 - analyzer - INFO - Waiting 5 seconds before retrying...
+2026-07-23 22:37:22,555 - analyzer - INFO - Calling Gemini API (models/gemini-flash-lite-latest) - Attempt 2/3...
+2026-07-23 22:37:23,331 - analyzer - WARNING - Attempt 2/3 failed during Gemini API news analysis: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite
+Please retry in 36.614475333s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash-lite"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, retry_delay {
+  seconds: 36
+}
+]
+2026-07-23 22:37:23,334 - analyzer - INFO - Waiting 5 seconds before retrying...
+2026-07-23 22:37:28,364 - analyzer - INFO - Calling Gemini API (models/gemini-flash-lite-latest) - Attempt 3/3...
+2026-07-23 22:37:29,303 - analyzer - WARNING - Attempt 3/3 failed during Gemini API news analysis: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-3.5-flash-lite
+Please retry in 30.630465646s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash-lite"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, retry_delay {
+  seconds: 30
+}
+]
+2026-07-23 22:37:29,305 - analyzer - ERROR - All 3 attempts to analyze news via Gemini API failed.
+2026-07-23 22:37:29,321 - Orchestrator - INFO - Step 2: Analysis completed. Categorized 0 unique summarized articles.
+2026-07-23 22:37:29,322 - Orchestrator - INFO - Step 3: Generating PDF document...
+2026-07-23 22:37:29,323 - pdf_generator - INFO - Starting PDF generation for date: 23.07.2026
+2026-07-23 22:37:29,324 - weasyprint.progress - INFO - Step 1 - Fetching and parsing HTML - HTML string
+2026-07-23 22:37:29,388 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 22:37:29,390 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap
+2026-07-23 22:37:30,984 - weasyprint.progress - INFO - Step 3 - Applying CSS
+2026-07-23 22:37:30,988 - weasyprint.progress - INFO - Step 4 - Creating formatting structure
+2026-07-23 22:37:30,992 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 1
+2026-07-23 22:37:31,066 - weasyprint.progress - INFO - Step 6 - Creating PDF
+2026-07-23 22:37:31,108 - weasyprint.progress - INFO - Step 7 - Adding PDF metadata
+2026-07-23 22:37:31,164 - pdf_generator - INFO - Successfully generated PDF at: c:\Projelerim\HaberOzetleri\Haber Ozeti 2026.07.23.pdf
+2026-07-23 22:37:31,165 - Orchestrator - INFO - Step 3: PDF generated successfully at: c:\Projelerim\HaberOzetleri\Haber Ozeti 2026.07.23.pdf
+2026-07-23 22:37:31,167 - Orchestrator - INFO - Step 4: Sending email report...
+2026-07-23 22:37:31,173 - mailer - INFO - Preparing to send email to nuriumar@gmail.com with attachment Haber Ozeti 2026.07.23.pdf
+2026-07-23 22:37:31,189 - mailer - INFO - Connecting to Gmail SMTP server on port 465...
+2026-07-23 22:37:31,644 - mailer - INFO - Logging in...
+2026-07-23 22:37:31,898 - mailer - INFO - Sending email...
+2026-07-23 22:37:33,124 - mailer - INFO - Email sent successfully!
+2026-07-23 22:37:33,125 - Orchestrator - INFO - Step 4: Email sent successfully.
+2026-07-23 22:37:33,132 - Orchestrator - INFO - Cleaned up generated PDF file to prevent repository clutter: c:\Projelerim\HaberOzetleri\Haber Ozeti 2026.07.23.pdf
+2026-07-23 22:37:33,138 - Orchestrator - INFO - =========================================
+2026-07-23 22:37:33,140 - Orchestrator - INFO - Pipeline finished successfully in 53.61 seconds.
+2026-07-23 22:37:33,142 - Orchestrator - INFO - =========================================
+2026-07-23 22:53:22,130 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 22:53:22,208 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 22:53:22,210 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 22:53:22,368 - Orchestrator - INFO - =========================================
+2026-07-23 22:53:22,368 - Orchestrator - INFO - Starting Daily News Summary Report Pipeline
+2026-07-23 22:53:22,369 - Orchestrator - INFO - =========================================
+2026-07-23 22:53:22,369 - Orchestrator - INFO - Step 1: Scraping all RSS feeds...
+2026-07-23 22:53:22,369 - scraper - INFO - Fetching RSS feed for: TRT Haber (https://www.trthaber.com/sondakika.rss)
+2026-07-23 22:53:22,816 - scraper - INFO - Successfully fetched 50 items from TRT Haber
+2026-07-23 22:53:22,818 - scraper - INFO - Fetching RSS feed for: AA (https://www.aa.com.tr/tr/rss/default?cat=guncel)
+2026-07-23 22:53:23,062 - scraper - INFO - Successfully fetched 23 items from AA
+2026-07-23 22:53:23,063 - scraper - INFO - Fetching RSS feed for: Hürriyet (https://www.hurriyet.com.tr/rss/anasayfa)
+2026-07-23 22:53:23,366 - scraper - INFO - Successfully fetched 69 items from Hürriyet
+2026-07-23 22:53:23,368 - scraper - INFO - Fetching RSS feed for: Milliyet (https://www.milliyet.com.tr/rss/rssNew/gundemRss.xml)
+2026-07-23 22:53:23,617 - scraper - INFO - Successfully fetched 20 items from Milliyet
+2026-07-23 22:53:23,618 - scraper - INFO - Fetching RSS feed for: Cumhuriyet (https://www.cumhuriyet.com.tr/rss/son_dakika.xml)
+2026-07-23 22:53:24,047 - scraper - INFO - Successfully fetched 100 items from Cumhuriyet
+2026-07-23 22:53:24,049 - scraper - INFO - Fetching RSS feed for: Yeni Şafak (https://www.yenisafak.com/rss?xml=gundem)
+2026-07-23 22:53:24,461 - scraper - INFO - Successfully fetched 20 items from Yeni Şafak
+2026-07-23 22:53:24,462 - scraper - INFO - Fetching RSS feed for: Yeni Akit (https://www.yeniakit.com.tr/rss/haber/gundem.xml)
+2026-07-23 22:53:24,759 - scraper - WARNING - No entries found for Yeni Akit
+2026-07-23 22:53:24,760 - scraper - INFO - Fetching RSS feed for: Sözcü (https://www.sozcu.com.tr/feeds-son-dakika)
+2026-07-23 22:53:25,011 - scraper - INFO - Successfully fetched 23 items from Sözcü
+2026-07-23 22:53:25,012 - scraper - INFO - Fetching RSS feed for: Habertürk (https://www.haberturk.com/rss)
+2026-07-23 22:53:25,473 - scraper - INFO - Successfully fetched 100 items from Habertürk
+2026-07-23 22:53:25,475 - scraper - INFO - Fetching RSS feed for: Bloomberg HT (https://www.bloomberght.com/rss)
+2026-07-23 22:53:25,593 - scraper - INFO - Successfully fetched 20 items from Bloomberg HT
+2026-07-23 22:53:25,594 - scraper - INFO - Fetching RSS feed for: NTV (https://www.ntv.com.tr/gundem.rss)
+2026-07-23 22:53:26,018 - scraper - INFO - Successfully fetched 20 items from NTV
+2026-07-23 22:53:26,019 - scraper - INFO - Fetching RSS feed for: Sabah (https://www.sabah.com.tr/rss/anasayfa.xml)
+2026-07-23 22:53:26,340 - scraper - INFO - Successfully fetched 10 items from Sabah
+2026-07-23 22:53:26,342 - scraper - INFO - Fetching RSS feed for: CNN Türk (https://www.cnnturk.com/feed/rss/all/news)
+2026-07-23 22:53:26,493 - scraper - INFO - Successfully fetched 35 items from CNN Türk
+2026-07-23 22:53:26,495 - scraper - INFO - Fetching RSS feed for: US Media (https://news.google.com/rss/search?q=site:nytimes.com+OR+site:washingtonpost.com+OR+site:cnn.com+OR+site:wsj.com+OR+site:bloomberg.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:53:27,265 - scraper - INFO - Successfully fetched 100 items from US Media
+2026-07-23 22:53:27,266 - scraper - INFO - Fetching RSS feed for: UK Media (https://news.google.com/rss/search?q=site:theguardian.com+OR+site:thetimes.co.uk+OR+site:ft.com+OR+site:independent.co.uk+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:53:28,020 - scraper - INFO - Successfully fetched 100 items from UK Media
+2026-07-23 22:53:28,022 - scraper - INFO - Fetching RSS feed for: BBC (http://feeds.bbci.co.uk/news/world/rss.xml)
+2026-07-23 22:53:28,734 - scraper - INFO - Successfully fetched 0 items from BBC
+2026-07-23 22:53:28,736 - scraper - INFO - Fetching RSS feed for: Reuters (https://news.google.com/rss/search?q=site:reuters.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:53:29,561 - scraper - INFO - Successfully fetched 100 items from Reuters
+2026-07-23 22:53:29,562 - scraper - INFO - Fetching RSS feed for: Germany Media (https://news.google.com/rss/search?q=site:dw.com+OR+site:spiegel.de+OR+site:zeit.de+OR+site:welt.de+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:53:30,399 - scraper - INFO - Successfully fetched 100 items from Germany Media
+2026-07-23 22:53:30,401 - scraper - INFO - Fetching RSS feed for: Spain Media (https://news.google.com/rss/search?q=site:elpais.com+OR+site:elmundo.es+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:53:31,253 - scraper - INFO - Successfully fetched 100 items from Spain Media
+2026-07-23 22:53:31,255 - scraper - INFO - Fetching RSS feed for: Italy Media (https://news.google.com/rss/search?q=site:corriere.it+OR+site:repubblica.it+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:53:31,944 - scraper - INFO - Successfully fetched 20 items from Italy Media
+2026-07-23 22:53:31,946 - scraper - INFO - Fetching RSS feed for: France Media (https://news.google.com/rss/search?q=site:lemonde.fr+OR+site:lefigaro.fr+OR+site:france24.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:53:32,593 - scraper - INFO - Successfully fetched 100 items from France Media
+2026-07-23 22:53:32,595 - scraper - INFO - Fetching RSS feed for: Greece Media (https://news.google.com/rss/search?q=site:ekathimerini.com+OR+site:tovima.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:53:33,246 - scraper - INFO - Successfully fetched 100 items from Greece Media
+2026-07-23 22:53:33,247 - scraper - INFO - Fetching RSS feed for: Israel Media (https://news.google.com/rss/search?q=site:haaretz.com+OR+site:jpost.com+OR+site:timesofisrael.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:53:34,033 - scraper - INFO - Successfully fetched 100 items from Israel Media
+2026-07-23 22:53:34,034 - scraper - INFO - Fetching RSS feed for: Russia Media (https://news.google.com/rss/search?q=site:rt.com+OR+site:tass.com+OR+site:sputniknews.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:53:34,842 - scraper - INFO - Successfully fetched 100 items from Russia Media
+2026-07-23 22:53:34,844 - scraper - INFO - Fetching RSS feed for: Iran Media (https://news.google.com/rss/search?q=site:presstv.ir+OR+site:irna.ir+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:53:35,549 - scraper - INFO - Successfully fetched 100 items from Iran Media
+2026-07-23 22:53:35,551 - scraper - INFO - Fetching RSS feed for: China Media (https://news.google.com/rss/search?q=site:xinhuanet.com+OR+site:cgtn.com+OR+site:scmp.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:53:36,388 - scraper - INFO - Successfully fetched 100 items from China Media
+2026-07-23 22:53:36,390 - scraper - INFO - Fetching RSS feed for: Sweden Media (https://news.google.com/rss/search?q=site:svt.se+OR+site:dn.se+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:53:36,749 - scraper - INFO - Successfully fetched 3 items from Sweden Media
+2026-07-23 22:53:36,752 - scraper - INFO - Fetching RSS feed for: Norway Media (https://news.google.com/rss/search?q=site:nrk.no+OR+site:aftenposten.no+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:53:37,086 - scraper - INFO - Successfully fetched 7 items from Norway Media
+2026-07-23 22:53:37,088 - scraper - INFO - Fetching RSS feed for: Denmark Media (https://news.google.com/rss/search?q=site:dr.dk+OR+site:politiken.dk+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:53:37,479 - scraper - INFO - Successfully fetched 13 items from Denmark Media
+2026-07-23 22:53:37,481 - scraper - INFO - Fetching RSS feed for: Google News Global (https://news.google.com/rss/search?q=Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:53:38,234 - scraper - INFO - Successfully fetched 100 items from Google News Global
+2026-07-23 22:53:38,235 - scraper - INFO - Scraping completed. Total aggregated articles: 1733
+2026-07-23 22:53:38,236 - Orchestrator - INFO - Step 1: Scraped 1733 raw news articles.
+2026-07-23 22:53:38,236 - Orchestrator - INFO - Filtering news to only keep the last 2 days...
+2026-07-23 22:53:38,237 - Orchestrator - INFO - Date filtering: 1035 articles excluded. 698 articles remaining.
+2026-07-23 22:53:38,239 - Orchestrator - INFO - Pre-deduplication: 685 unique articles out of 698 remaining.
+2026-07-23 22:53:38,239 - Orchestrator - INFO - Limit capping: 0 unique articles will be excluded because of analysis limit (800).
+2026-07-23 22:53:38,239 - Orchestrator - INFO - Step 2: Sending articles to Gemini API for analysis (limit: 800)...
+2026-07-23 22:53:38,242 - analyzer - INFO - Loaded category limits from environment: Genel=25, Savunma=20, Spor=20, Dünya=35
+2026-07-23 22:53:38,243 - analyzer - INFO - Pre-deduplication filtered raw articles from 698 down to 685 unique titles.
+2026-07-23 22:53:38,244 - analyzer - INFO - Unique articles: local=468, global=217
+2026-07-23 22:53:38,245 - analyzer - INFO - Sending 685 unique articles to Gemini API...
+2026-07-23 22:53:38,252 - analyzer - INFO - Calling Gemini API (models/gemini-flash-lite-latest) - Attempt 1/3...
+2026-07-23 22:53:53,181 - analyzer - INFO - Gemini analysis complete. Categories: Genel: 25, Savunma: 5, Spor: 20, Dünya: 35
+2026-07-23 22:53:53,183 - Orchestrator - INFO - Step 2: Analysis completed. Categorized 85 unique summarized articles.
+2026-07-23 22:53:53,183 - Orchestrator - INFO - Step 3: Generating PDF document...
+2026-07-23 22:53:53,184 - pdf_generator - INFO - Starting PDF generation for date: 23.07.2026
+2026-07-23 22:53:53,184 - weasyprint.progress - INFO - Step 1 - Fetching and parsing HTML - HTML string
+2026-07-23 22:53:53,276 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 22:53:53,279 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap
+2026-07-23 22:53:54,849 - weasyprint.progress - INFO - Step 3 - Applying CSS
+2026-07-23 22:53:54,888 - weasyprint.progress - INFO - Step 4 - Creating formatting structure
+2026-07-23 22:53:54,944 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 1
+2026-07-23 22:53:55,002 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 2
+2026-07-23 22:53:55,032 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 3
+2026-07-23 22:53:55,061 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 4
+2026-07-23 22:53:55,088 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 5
+2026-07-23 22:53:55,115 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 6
+2026-07-23 22:53:55,147 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 7
+2026-07-23 22:53:55,172 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 8
+2026-07-23 22:53:55,246 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 9
+2026-07-23 22:53:55,270 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 10
+2026-07-23 22:53:55,294 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 11
+2026-07-23 22:53:55,404 - weasyprint.progress - INFO - Step 6 - Creating PDF
+2026-07-23 22:53:55,582 - weasyprint.progress - INFO - Step 7 - Adding PDF metadata
+2026-07-23 22:53:55,694 - pdf_generator - INFO - Successfully generated PDF at: C:\Projelerim\HaberOzetleri\Haber Ozeti 2026.07.23.pdf
+2026-07-23 22:53:55,694 - Orchestrator - INFO - Step 3: PDF generated successfully at: C:\Projelerim\HaberOzetleri\Haber Ozeti 2026.07.23.pdf
+2026-07-23 22:53:55,694 - Orchestrator - INFO - Step 4: Skipped email sending (flag --skip-email active). PDF file retained for local review.
+2026-07-23 22:53:55,694 - Orchestrator - INFO - =========================================
+2026-07-23 22:53:55,694 - Orchestrator - INFO - Pipeline finished successfully in 33.33 seconds.
+2026-07-23 22:53:55,695 - Orchestrator - INFO - =========================================
+2026-07-23 22:54:06,943 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 22:54:07,025 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 22:54:07,027 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 22:54:07,196 - Orchestrator - INFO - =========================================
+2026-07-23 22:54:07,197 - Orchestrator - INFO - Starting Daily News Summary Report Pipeline
+2026-07-23 22:54:07,197 - Orchestrator - INFO - =========================================
+2026-07-23 22:54:07,197 - Orchestrator - INFO - Step 1: Scraping all RSS feeds...
+2026-07-23 22:54:07,197 - scraper - INFO - Fetching RSS feed for: TRT Haber (https://www.trthaber.com/sondakika.rss)
+2026-07-23 22:54:07,568 - scraper - INFO - Successfully fetched 50 items from TRT Haber
+2026-07-23 22:54:07,570 - scraper - INFO - Fetching RSS feed for: AA (https://www.aa.com.tr/tr/rss/default?cat=guncel)
+2026-07-23 22:54:07,794 - scraper - INFO - Successfully fetched 23 items from AA
+2026-07-23 22:54:07,796 - scraper - INFO - Fetching RSS feed for: Hürriyet (https://www.hurriyet.com.tr/rss/anasayfa)
+2026-07-23 22:54:08,066 - scraper - INFO - Successfully fetched 69 items from Hürriyet
+2026-07-23 22:54:08,068 - scraper - INFO - Fetching RSS feed for: Milliyet (https://www.milliyet.com.tr/rss/rssNew/gundemRss.xml)
+2026-07-23 22:54:08,329 - scraper - INFO - Successfully fetched 20 items from Milliyet
+2026-07-23 22:54:08,331 - scraper - INFO - Fetching RSS feed for: Cumhuriyet (https://www.cumhuriyet.com.tr/rss/son_dakika.xml)
+2026-07-23 22:54:08,753 - scraper - INFO - Successfully fetched 100 items from Cumhuriyet
+2026-07-23 22:54:08,755 - scraper - INFO - Fetching RSS feed for: Yeni Şafak (https://www.yenisafak.com/rss?xml=gundem)
+2026-07-23 22:54:08,964 - scraper - INFO - Successfully fetched 20 items from Yeni Şafak
+2026-07-23 22:54:08,966 - scraper - INFO - Fetching RSS feed for: Yeni Akit (https://www.yeniakit.com.tr/rss/haber/gundem.xml)
+2026-07-23 22:54:09,273 - scraper - WARNING - No entries found for Yeni Akit
+2026-07-23 22:54:09,275 - scraper - INFO - Fetching RSS feed for: Sözcü (https://www.sozcu.com.tr/feeds-son-dakika)
+2026-07-23 22:54:09,574 - scraper - INFO - Successfully fetched 23 items from Sözcü
+2026-07-23 22:54:09,575 - scraper - INFO - Fetching RSS feed for: Habertürk (https://www.haberturk.com/rss)
+2026-07-23 22:54:09,806 - scraper - INFO - Successfully fetched 100 items from Habertürk
+2026-07-23 22:54:09,808 - scraper - INFO - Fetching RSS feed for: Bloomberg HT (https://www.bloomberght.com/rss)
+2026-07-23 22:54:09,986 - scraper - INFO - Successfully fetched 20 items from Bloomberg HT
+2026-07-23 22:54:09,987 - scraper - INFO - Fetching RSS feed for: NTV (https://www.ntv.com.tr/gundem.rss)
+2026-07-23 22:54:10,669 - scraper - INFO - Successfully fetched 20 items from NTV
+2026-07-23 22:54:10,670 - scraper - INFO - Fetching RSS feed for: Sabah (https://www.sabah.com.tr/rss/anasayfa.xml)
+2026-07-23 22:54:10,802 - scraper - INFO - Successfully fetched 10 items from Sabah
+2026-07-23 22:54:10,804 - scraper - INFO - Fetching RSS feed for: CNN Türk (https://www.cnnturk.com/feed/rss/all/news)
+2026-07-23 22:54:10,987 - scraper - INFO - Successfully fetched 35 items from CNN Türk
+2026-07-23 22:54:10,989 - scraper - INFO - Fetching RSS feed for: US Media (https://news.google.com/rss/search?q=site:nytimes.com+OR+site:washingtonpost.com+OR+site:cnn.com+OR+site:wsj.com+OR+site:bloomberg.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:54:11,286 - scraper - INFO - Successfully fetched 100 items from US Media
+2026-07-23 22:54:11,287 - scraper - INFO - Fetching RSS feed for: UK Media (https://news.google.com/rss/search?q=site:theguardian.com+OR+site:thetimes.co.uk+OR+site:ft.com+OR+site:independent.co.uk+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:54:11,604 - scraper - INFO - Successfully fetched 100 items from UK Media
+2026-07-23 22:54:11,605 - scraper - INFO - Fetching RSS feed for: BBC (http://feeds.bbci.co.uk/news/world/rss.xml)
+2026-07-23 22:54:12,216 - scraper - INFO - Successfully fetched 0 items from BBC
+2026-07-23 22:54:12,218 - scraper - INFO - Fetching RSS feed for: Reuters (https://news.google.com/rss/search?q=site:reuters.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:54:12,501 - scraper - INFO - Successfully fetched 100 items from Reuters
+2026-07-23 22:54:12,503 - scraper - INFO - Fetching RSS feed for: Germany Media (https://news.google.com/rss/search?q=site:dw.com+OR+site:spiegel.de+OR+site:zeit.de+OR+site:welt.de+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:54:12,843 - scraper - INFO - Successfully fetched 100 items from Germany Media
+2026-07-23 22:54:12,844 - scraper - INFO - Fetching RSS feed for: Spain Media (https://news.google.com/rss/search?q=site:elpais.com+OR+site:elmundo.es+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:54:13,193 - scraper - INFO - Successfully fetched 100 items from Spain Media
+2026-07-23 22:54:13,195 - scraper - INFO - Fetching RSS feed for: Italy Media (https://news.google.com/rss/search?q=site:corriere.it+OR+site:repubblica.it+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:54:13,387 - scraper - INFO - Successfully fetched 20 items from Italy Media
+2026-07-23 22:54:13,389 - scraper - INFO - Fetching RSS feed for: France Media (https://news.google.com/rss/search?q=site:lemonde.fr+OR+site:lefigaro.fr+OR+site:france24.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:54:13,699 - scraper - INFO - Successfully fetched 100 items from France Media
+2026-07-23 22:54:13,701 - scraper - INFO - Fetching RSS feed for: Greece Media (https://news.google.com/rss/search?q=site:ekathimerini.com+OR+site:tovima.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:54:14,075 - scraper - INFO - Successfully fetched 100 items from Greece Media
+2026-07-23 22:54:14,077 - scraper - INFO - Fetching RSS feed for: Israel Media (https://news.google.com/rss/search?q=site:haaretz.com+OR+site:jpost.com+OR+site:timesofisrael.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:54:14,435 - scraper - INFO - Successfully fetched 100 items from Israel Media
+2026-07-23 22:54:14,437 - scraper - INFO - Fetching RSS feed for: Russia Media (https://news.google.com/rss/search?q=site:rt.com+OR+site:tass.com+OR+site:sputniknews.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:54:14,811 - scraper - INFO - Successfully fetched 100 items from Russia Media
+2026-07-23 22:54:14,814 - scraper - INFO - Fetching RSS feed for: Iran Media (https://news.google.com/rss/search?q=site:presstv.ir+OR+site:irna.ir+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:54:15,187 - scraper - INFO - Successfully fetched 100 items from Iran Media
+2026-07-23 22:54:15,190 - scraper - INFO - Fetching RSS feed for: China Media (https://news.google.com/rss/search?q=site:xinhuanet.com+OR+site:cgtn.com+OR+site:scmp.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:54:15,616 - scraper - INFO - Successfully fetched 100 items from China Media
+2026-07-23 22:54:15,619 - scraper - INFO - Fetching RSS feed for: Sweden Media (https://news.google.com/rss/search?q=site:svt.se+OR+site:dn.se+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:54:15,828 - scraper - INFO - Successfully fetched 3 items from Sweden Media
+2026-07-23 22:54:15,831 - scraper - INFO - Fetching RSS feed for: Norway Media (https://news.google.com/rss/search?q=site:nrk.no+OR+site:aftenposten.no+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:54:16,055 - scraper - INFO - Successfully fetched 7 items from Norway Media
+2026-07-23 22:54:16,059 - scraper - INFO - Fetching RSS feed for: Denmark Media (https://news.google.com/rss/search?q=site:dr.dk+OR+site:politiken.dk+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:54:16,248 - scraper - INFO - Successfully fetched 13 items from Denmark Media
+2026-07-23 22:54:16,251 - scraper - INFO - Fetching RSS feed for: Google News Global (https://news.google.com/rss/search?q=Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:54:16,571 - scraper - INFO - Successfully fetched 100 items from Google News Global
+2026-07-23 22:54:16,573 - scraper - INFO - Scraping completed. Total aggregated articles: 1733
+2026-07-23 22:54:16,573 - Orchestrator - INFO - Step 1: Scraped 1733 raw news articles.
+2026-07-23 22:54:16,574 - Orchestrator - INFO - Filtering news to only keep the last 2 days...
+2026-07-23 22:54:16,575 - Orchestrator - INFO - Date filtering: 1035 articles excluded. 698 articles remaining.
+2026-07-23 22:54:16,577 - Orchestrator - INFO - Pre-deduplication: 684 unique articles out of 698 remaining.
+2026-07-23 22:54:16,577 - Orchestrator - INFO - Limit capping: 0 unique articles will be excluded because of analysis limit (800).
+2026-07-23 22:54:16,577 - Orchestrator - INFO - Step 2: Sending articles to Gemini API for analysis (limit: 800)...
+2026-07-23 22:54:16,581 - analyzer - INFO - Loaded category limits from environment: Genel=25, Savunma=20, Spor=20, Dünya=35
+2026-07-23 22:54:16,583 - analyzer - INFO - Pre-deduplication filtered raw articles from 698 down to 684 unique titles.
+2026-07-23 22:54:16,584 - analyzer - INFO - Unique articles: local=467, global=217
+2026-07-23 22:54:16,585 - analyzer - INFO - Sending 684 unique articles to Gemini API...
+2026-07-23 22:54:16,598 - analyzer - INFO - Calling Gemini API (models/gemini-flash-lite-latest) - Attempt 1/3...
+2026-07-23 22:54:34,258 - analyzer - WARNING - Attempt 1/3 failed to decode JSON from Gemini API response: Unterminated string starting at: line 5 column 16 (char 71)
+2026-07-23 22:54:34,259 - analyzer - WARNING - Raw response text: {
+  "dunya_basininda_turkiye": [
+    {
+      "id": 468,
+      "title": "Orta Doğu Savaşının Etkisiyle Türkiye'de Faizler Sabit Kalabilir mi? Bloomberg Analiziyle Gündemde Küresel Beklentiler Uyarıları Koruyor Muş Gibi Görünüyor muş Gibi Değerlendiriliyor muş Gibi Görüntü Sunuyor muş Gibi Aktarılıyor Muş Gibi Değerlendiriliyor muş Gibi Yansıtılıyor Muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gibi Değerlendiriliyor muş Gibi Aktarılıyor muş Gibi Görüntü Sunuyor muş Gib
+2026-07-23 22:54:34,259 - analyzer - INFO - Waiting 5 seconds before retrying...
+2026-07-23 22:54:39,268 - analyzer - INFO - Calling Gemini API (models/gemini-flash-lite-latest) - Attempt 2/3...
+2026-07-23 22:54:58,482 - analyzer - WARNING - Attempt 2/3 failed to decode JSON from Gemini API response: Unterminated string starting at: line 5 column 16 (char 71)
+2026-07-23 22:54:58,483 - analyzer - WARNING - Raw response text: {
+  "dunya_basininda_turkiye": [
+    {
+      "id": 468,
+      "title": "Orta Doğu'daki Savaş Enflasyonla Mücadeleyi Etkiliyor: Türkiye Faizleri Sabit Tutacak Takipte Kalıyor mu?, Bloomberg Değerlendirmesiyle Gündemde Ayrıntılı Değerlendirildiğinde Küresel Basında Geniş Yankı Uyandırdı ve Uzmanlar Tarafından Yakından İzleniyor Diye Raporlandı Hazır Edildi ve Okurlara Duyuruldu Haber Detaylarında Yer Buldu Yansıdı Gündemde Kalmaya Devam Ettiği Vurgulandı Ayrıntılar Paylaşıldı Raporlandı Okurla Paylaşıldı Sektör Tarafından Takip Ediliyor Haberleri Ardı Ardına Gecikmedi Sunuldu ve Aktarıldı Son Durum Değerlendirildiğinde Analiz Edildi Raporlandı Diye Kaydedildi Yansımaları Olduğu Bildirildi Rapor Edildi Duyuruldu Haberleştirildi Gündeme Getirildi Detaylar Aktarıldı Raporlaştı Aktarılanlara Göre Değerlendirildi Gündemde Kalmayı Sürdürüyor Sunuldu Okurlara Ulaştırıldı ve Paylaşıldı Duyurulan Başlıklar Arasındaydı Aktarıldı Rapor Edildi Duyuruldu Haber Oldu Gündem Oldu Raporlandı ve Sinyaller Verdiği Belirtildi Ayrıntılarıyla Aktarıldı Rapor Edildi Değerlendirildi Yansıdı Okurlarla Paylaşıldı Haber Oldu Gündeme Taşındı Paylaşıldı Sinyalleri Alındı Duyuruldu Haberleştirildi Gündemde Geniş Yer Buldu Görüldü Raporlandı Anlatıldı Analiz Edildi Bildirildi Duyuruldu Paylaşıldı Raporlaştı Haberleştirildi Sunuldu Ve Okura Ulaştırıldı Aktarıldı Güncellendi Duyuruldu Kaydedildi Haber Oldu Raporlaştı Değerlendirildi Rapor Edildi Bildirildi Paylaşıldı Gündemde Yer Edindi Aktarıldı Güncellendi Rapor Oldu Raporlandı Bildirildi Duyuruldu Sunuldu Haber Oldu Raporlandı Gündeme Geldi Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu Raporlandı Bildirildi Paylaşıldı Raporlandı Duyuruldu Haber Oldu
+2026-07-23 22:54:58,495 - analyzer - INFO - Waiting 5 seconds before retrying...
+2026-07-23 22:55:03,503 - analyzer - INFO - Calling Gemini API (models/gemini-flash-lite-latest) - Attempt 3/3...
+2026-07-23 22:55:38,371 - analyzer - WARNING - Attempt 3/3 failed to decode JSON from Gemini API response: Unterminated string starting at: line 39 column 16 (char 27872)
+2026-07-23 22:55:38,375 - analyzer - WARNING - Raw response text: {
+  "dunya_basininda_turkiye": [
+    {
+      "id": 468,
+      "title": "Orta Doğu'daki Savaş Enflasyonla Mücadeleyi Etkiliyor: Türkiye Faizleri Sabit Tutacak Takipte Kalacak Mı? Bloomberg Analiziyle Gündemdeştirebilir Miyiz Gibi Soru İşaretleri Yaratıyor mu Diye Bakılıyor mu Acaba Bu Noktada? Bloomberg'in Değerlendirmesi Dikkat Çekti Ve Politika Faizlerinin Sabit Kalması Bekleniyor Şimdilik Gelişmeler Işığında Kesinlikle Bölgesel Gerilimler Merkez Bankasını Karar Vermeye Zorluyor Şüphesiz Kesinlikle Bir Başka Gözle Görülen O ki Piyasalar Yakından Takip Ediyor Bu Durumu Kesinlikle Derinden Hissedilen Bir Gerçek Bu Anlamda Türkiye İçin Büyük Önem Taşıyor Şüphesiz Her Durumda Kararlar Etkileniyor Bu Süreçte Oldukça Yoğun Bir Şekilde Hissediliyor Kesinlikle Uzmanlar Sürecin Yakın Takipçisi Durumunda Kesinlikle Değerlendiriliyor Her Aşamada Hassasiyetle İnceleniyor Şüphesiz Derinden Takip Edilen Başlıca Konuların Başında Geliyor Kesinlikle Çok Önemli Bir Gelişme Olarak Kayıtlara Geçti Bu Durum Kesinlikle Gündemin Zirvesinde Yer Alıyor Şüphesiz Dikkat Çekici Bir Nokta Olarak Öne Çıkıyor Kesinlikle Her Adımda Önem Arz Ediyor Bu Bağlamda Büyük Bir Titizlikle İnceleniyor Kesinlikle Kararların Arka Planında Bu Etkenler Yatıyor Oldukça Yoğun Bir Şekilde Tartışılıyor Şüphesiz Her Gelişme Ayrı Bir Değer Taşıyor Bu Doğrultuda Adımlar Atılıyor Kesinlikle Süreç Yakından İzleniyor Her Detay Önemle İnceleniyor Şüphesiz Uzmanlar Tarafından Titizlikle Değerlendirilen Bu Durum Piyasaların Yönünü Belirlemede Kritik Bir Rol Oynuyor Kesinlikle En Çok Konuşulan Konuların Başında Geliyor Şüphesiz Herkesin Dikkatini Çeken Bu Gelişmeler Önümüzdeki Dönemde De Sıkça Tartışılmaya Devam Edecek Gibi Görünüyor Kesinlikle Ekonomik Dengeler Açısından Da Büyük Bir Önem Arz Etmektedir Bu Durum Kesinlikle Göz ardı Edilemez Bir Gerçek Olarak Karşımızda Duruyor Kesinlikle Bölgesel Risklerin Azaltılması İçin Çabalar Sürüyor Kesinlikle Piyasaların Beklentileri Doğrultusunda Adımlar Atılıyor Şüphesiz Her Aşamada Büyük Bir Titizlikle Süreç Yönetiliyor Kesinlikle Uzmanların Gözü Bu Gelişmelerin Üzerinde Olmaya Devam Edecek Şüphesiz Bu Anlamda Atılacak Adımlar Büyük Bir Merakla Bekleniyor Kesinlikle Ekonomik İstikrarın Korunması Adına Kritik Kararlar Alınıyor Şüphesiz Piyasaların Tepkisi Yakından İzleniyor Kesinlikle Her Gelişme Titizlikle Analiz Ediliyor Şüphesiz Büyük Bir Önem Taşıyan Bu Durum Türkiye Ekonomisinin Geleceği Açısından Kritik Bir Eşikte Bulunuyor Kesinlikle Sıkı Bir Şekilde Takip Ediliyor Bu Süreç Her Aşamada Değerlendiriliyor Şüphesiz Büyük Bir Dikkatle İncelenen Hususlar Arasında Yer Alıyor Kesinlikle Gündemin Merkezinde Bulunuyor Bu Durum Şüphesiz Büyük Bir İlgiyle İzlenmeye Devam Edecek Kesinlikle Piyasaların Güvenini Kazanmak Adına Önemli Adımlar Atılıyor Şüphesiz Her Gelişme Büyük Bir Titizlikle Ele Alınıyor Kesinlikle Ekonomistlerin Görüşleri Bu Yönde Şekilleniyor Şüphesiz Her Aşamada Dikkat Edilen Hususlar Arasında Yer Alıyor Kesinlikle Büyük Bir Önem Taşımaktadır Bu Durum Şüphesiz Herkesin Odak Noktası Haline Gelmiştir Kesinlikle Detaylar Yakından İnceleniyor Bu Süreçte Kararlar Titizlikle Alınmaktadır Şüphesiz Her Gelişme Ayrı Bir Değer Taşımaktadır Kesinlikle Bu Durum Piyasalar Tarafından Yakından İzlenmektedir Şüphesiz Her Aşamada Hassasiyetle Durulmaktadır Kesinlikle Büyük Bir Titizlikle İncelenmeye Devam Edecektir Bu Süreç Şüphesiz Kesinlikle Bir Başka Gözle Görülen O ki Piyasalar Yakından Takip Ediyor Bu Durumu Kesinlikle Derinden Hissedilen Bir Gerçek Bu Anlamda Türkiye İçin Büyük Önem Taşıyor Şüphesiz Her Durumda Kararlar Etkileniyor Bu Süreçte Oldukça Yoğun Bir Şekilde Hissediliyor Kesinlikle Uzmanlar Sürecin Yakın Takipçisi Durumunda Kesinlikle Değerlendiriliyor Her Aşamada Hassasiyetle İnceleniyor Şüphesiz Derinden Takip Edilen Başlıca Konuların Başında Geliyor Kesinlikle Çok Önemli Bir Gelişme Olarak Kayıtlara Geçti Bu Durum Kesinlikle Gündemin Zirvesinde Yer Alıyor Şüphesiz Dikkat Çekici Bir Nokta Olarak Öne Çıkıyor Kesinlikle Her Adımda Önem Arz Ediyor Bu Bağlamda Büyük Bir Titizlikle İnceleniyor Kesinlikle Kararların Arka Planında Bu Etkenler Yatıyor Oldukça Yoğun Bir Şekilde Tartışılıyor Şüphesiz Her Gelişme Ayrı Bir Değer Taşıyor Bu Doğrultuda Adımlar Atılıyor Kesinlikle Süreç Yakından İzleniyor Her Detay Önemle İnceleniyor Şüphesiz Uzmanlar Tarafından Titizlikle Değerlendirilen Bu Durum Piyasaların Yönünü Belirlemede Kritik Bir Rol Oynuyor Kesinlikle En Çok Konuşulan Konuların Başında Geliyor Şüphesiz Herkesin Dikkatini Çeken Bu Gelişmeler Önümüzdeki Dönemde De Sıkça Tartışılmaya Devam Edecek Gibi Görünüyor Kesinlikle Ekonomik Dengeler Açısından Da Büyük Bir Önem Arz Etmektedir Bu Durum Kesinlikle Göz ardı Edilemez Bir Gerçek Olarak Karşımızda Duruyor Kesinlikle Bölgesel Risklerin Azaltılması İçin Çabalar Sürüyor Kesinlikle Piyasaların Beklentileri Doğrultusunda Adımlar Atılıyor Şüphesiz Her Aşamada Büyük Bir Titizlikle Süreç Yönetiliyor Kesinlikle Uzmanların Gözü Bu Gelişmelerin Üzerinde Olmaya Devam Edecek Şüphesiz Bu Anlamda Atılacak Adımlar Büyük Bir Merakla Bekleniyor Kesinlikle Ekonomik İstikrarın Korunması Adına Kritik Kararlar Alınıyor Şüphesiz Piyasaların Tepkisi Yakından İzleniyor Kesinlikle Her Gelişme Titizlikle Analiz Ediliyor Şüphesiz Büyük Bir Önem Taşıyan Bu Durum Türkiye Ekonomisinin Geleceği Açısından Kritik Bir Eşikte Bulunuyor Kesinlikle Sıkı Bir Şekilde Takip Ediliyor Bu Süreç Her Aşamada Değerlendiriliyor Şüphesiz Büyük Bir Dikkatle İncelenen Hususlar Arasında Yer Alıyor Kesinlikle Gündemin Merkezinde Bulunuyor Bu Durum Şüphesiz Büyük Bir İlgiyle İzlenmeye Devam Edecek Kesinlikle Piyasaların Güvenini Kazanmak Adına Önemli Adımlar Atılıyor Şüphesiz Her Gelişme Büyük Bir Titizlikle Ele Alınıyor Kesinlikle Ekonomistlerin Görüşleri Bu Yönde Şekilleniyor Şüphesiz Her Aşamada Dikkat Edilen Hususlar Arasında Yer Alıyor Kesinlikle Büyük Bir Önem Taşımaktadır Bu Durum Şüphesiz Herkesin Odak Noktası Haline Gelmiştir Kesinlikle Detaylar Yakından İnceleniyor Bu Süreçte Kararlar Titizlikle Alınmaktadır Şüphesiz Her Gelişme Ayrı Bir Değer Taşımaktadır Kesinlikle Bu Durum Piyasalar Tarafından Yakından İzlenmektedir Şüphesiz Her Aşamada Hassasiyetle Durulmaktadır Kesinlikle Büyük Bir Titizlikle İncelenmeye Devam Edecektir Bu Süreç Şüphesiz Kesinlikle Bu Haberde Türkiye'nin enflasyonla mücadelesinde Orta Doğu'daki savaş tehditleriyle karşı karşıya olduğu ve faiz oranlarını sabit tutmasının beklendiği vurgulandı."
+    },
+    {
+      "id": 532,
+      "title": "Almanya DW Muhabirinin Yeniden Gözaltına Alınmasından 'Rahatsızlık' Duyduğunu Açıkladı: Uluslararası Basında Geniş Yankı Uyandıran Olayın Detayları Netleşiyor Mu Bilinmez Ama Almanya Hükümeti Tepkisini Gösterdi Kesinlikle Bu Konu İki Ülke Arasında Diplomasi Trafiğini Hızlandırdı Şüphesiz Alman Makamları Süreci Yakından Takip Ediyor ve Konunun Takipçisi Olacaklarını Belirttiler Kesinlikle Basın Özgürlüğü Tartışmalarını Yeniden Alevlendiren Bu Gelişme Çeşitli Platformlarda Tartışılıyor Şüphesiz Türkiye Tarafından Yapılacak Açıklamalar Merakla Beklenirken, Alman Basını Olayı Manşetlerine Taşıdı Kesinlikle Karşılıklı Açıklamalarla Gündemdeki Yerini Koruyan Bu Husus Diplomasi Kulislerinde Yoğun Şekilde Değerlendiriliyor Şüphesiz Olayın Gelişimi Her İki Ülke İçin De Büyük Önem Arz Ediyor Kesinlikle İlgili Makamlar Konuyu Titizlikle İnceliyor Şüphesiz Uluslararası Kamuoyunun Da Dikkatini Çeken Bu Gelişme Önümüzdeki Günlerde Sıkça Konuşulacak Gibi Görünüyor Kesinlikle Karşılıklı Temasların Artması Bekleniyor Bu Anlamda Önemli Adımların Atılması Muhtemeldir Şüphesiz Her İki tarafın da Hassasiyet Gösterdiği Bu Konu Çözüm Bekliyor Kesinlikle Diplomasi Kanalları Aktif Bir Şekilde İşletiliyor Bu Durum Şüphesiz İlişkilerin Seyrini Doğrudan Etkileyebilecek Niteliktedir Kesinlikle Uzmanlar Konunun Hukuki ve Siyasi Boyutlarını Tartışmayı Sürdürüyor Şüphesiz Kamuoyunun Bilgilendirilmesi Adına Yeni Açıklamalar Yapılması Bekleniyor Kesinlikle Olayın Tüm Yönleriyle Aydınlatılması İçin Çalışmalar Devam Etmektedir Şüphesiz Bu Gelişme Basın Özgürlüğü Tartışmalarının Odağına Yerleşti Kesinlikle Her Kesimden Farklı Tepkiler Gelmeye Devam Ediyor Bu Durum Şüphesiz Uzun Süre Gündemde Kalacağının İşaretini Veriyor Kesinlikle Yetkililerden Konuya İlişkin Detaylı Bilgiler Verilmesi Beklenmektedir Şüphesiz Diplomasi Trafiği Hız Kesmeden Devam Edecektir Kesinlikle Bu Hassas Konunun Çözümü İçin Çeşitli Girişimlerde Bulunuluyor Şüphesiz Her Gelişme Büyük Bir Dikkatle İzleniyor Kesinlikle İlişkilerin Geleceği Açısından Önemli Bir Eşik Olarak Kabul Ediliyor Bu Durum Şüphesiz Uluslararası Medyanın Da Yakın Takibindedir Kesinlikle Sürecin Nasıl Şekilleneceği Merakla Beklenmektedir Şüphesiz Her İki Ülke Arasındaki Diyalog Kanalları Açık Tutulmaya Çalışılıyor Kesinlikle Gelişmeler An be An Takip Edilmektedir Şüphesiz Bu Konu Önümüzdeki Günlerde de Konuşulmaya Devam Edecektir Kesinlikle Karşılıklı Beklentiler Dile Getiriliyor Bu Anlamda Atılacak Adımlar Büyük Önem Taşımaktadır Şüphesiz Kamuoyu Yakından Bilgilendirilmektedir Kesinlikle Uzmanların Değerlendirmeleri Dikkatle İnceleniyor Şüphesiz Sürecin Hassasiyeti Göz Önünde Bulundurulmaktadır Kesinlikle Her Detay Titizlikle Ele Alınıyor Şüphesiz Bu Durum İki Ülke Arasındaki İlişkilerin Seyrini Belirlemede Etkili Olacaktır Kesinlikle Gelişmeler Yakından İzlenmektedir Şüphesiz Bu Konu Uzun Süre Tartışılmaya Devam Edecektir Kesinlikle Yetkililer Tarafından Yapılacak Açıklamalar Beklenmektedir Şüphesiz Her İki Taraf İçin de Önemli Bir Süreçtir Bu Durum Kesinlikle Göz ardı Edilemez Bir Gerçektir Şüphesiz Konunun Takipçisi Olmaya Devam Edeceğiz Kesinlikle Bu Durum Basın Dünyasında Yankı Uyandırmıştır Şüphesiz Benzer Olayların Yaşanmaması İçin Gerekli Tedbirlerin Alınması Gerektiği Vurgulanmaktadır Kesinlikle İlgili Taraflar Arasındaki Görüşmeler Sürdürülmektedir Şüphesiz Olayın Sonucu Merakla Beklenmektedir Kesinlikle Bu Husus İlişkiler Açısından Kritik Bir Dönemeçtir Şüphesiz Her Gelişme Titizlikle İncelenmektedir Kesinlikle Süreç Yakından Takip Edilmektedir Şüphesiz Bu Durum Tüm Yönleriyle Değerlendirilmektedir Kesinlikle Gerekli Açıklamaların Yapılması Beklenmektedir Şüphesiz Her İki Ülke İçin de Önem Arz Eden Bu Konu Çözüme Kavuşturulmayı Bekliyor Kesinlikle İlişkilerin Sağlıklı Bir Zeminde İlerlemesi İçin Çaba Harcanmaktadır Şüphesiz Bu Durum Her Kesimin Odak Noktası Haline Gelmiştir Kesinlikle Detaylar Netleşmektedir Şüphesiz Süreç Hassasiyetle Yürütülmektedir Kesinlikle Bu Gelişme Uzun Süre Konuşulacaktır Şüphesiz Herkes Tarafından Yakından İzlenmektedir Kesinlikle Olayın Arka Planı Araştırılmaktadır Şüphesiz Yetkililer Açıklamalarını Sürdürmektedir Kesinlikle Bu Durum Diplomasi Arenasında Geniş Yankı Uyandırmıştır Şüphesiz Her Gelişme Önemle Takip Edilmektedir Kesinlikle Sürecin Sonucu Merakla Beklenmektedir Şüphesiz İlişkiler Açısından Dönüm Noktası Olabilir Bu Durum Kesinlikle Göz ardı Edilmemelidir Şüphesiz Her Detay Büyük Bir Titizlikle İncelenmektedir Kesinlikle Bu Gelişme Gündemin Başköşesindedir Şüphesiz Her Kesim Tarafından Yakından İzlenmektedir Kesinlikle Olayın Seyri Değişebilir Şüphesiz Gelişmeler An be An Aktarılmaktadır Kesinlikle Bu Konu Üzerine Yapılan Değerlendirmeler Sürmektedir Şüphesiz Her İki Ülke De Konuya Hassasiyetle Yaklaşmaktadır Kesinlikle İlişkilerin Geleceği Açısından Önemli Bir Sınav Niteliğindedir Bu Durum Şüphesiz Kesinlikle Bu Haberde Almanya'nın, Türkiye'de Deutsche Welle muhabirinin yeniden gözaltına alınmasından duyduğu rahatsızlığı dile getirdiği aktarıldı."
+    },
+    {
+      "id": 533,
+      "title": "Muğla'daki Orman Yangınlarına Havadan Müdahale Sürüyor: Reuters Haberinde Ekiplerin Alevlerle Mücadelesi Geniş Yer Buldu Kesinlikle Bölgedeki Çalışmalar Tüm Hızıyla Devam Ediyor Şüphesiz Havadan ve Karadan Yapılan Müdahaleler Yangının Kontrol Altına Alınması İçin Kritik Önem Taşıyor Kesinlikle Sıcak Hava ve Rüzgarın Etkisiyle Büyüyen Alevler Ekiplerin İşini Zorlaştırsa da Yoğun Bir Çaba Harcanıyor Şüphesiz Uluslararası Ajansların Da Son Dakika Olarak Geçtiği Bu Gelişmeler Bölge Halkında Endişe Yaratırken, Söndürme Çalışmaları Aralıksız Sürdürülüyor Kesinlikle Orman Genel Müdürlüğü ve İlgili Kurumlar Koordineli Bir Şekilde Operasyonu Yönetiyor Şüphesiz Vatandaşların Güvenli Bölgelere Tahliyesi Sağlanırken, Can Kaybı Yaşanmaması İçin Azami Özen Gösteriliyor Kesinlikle Yangının Çıkış Nedeniyle İlgili İncelemeler Başlatıldı Şüphesiz Bu Tür Felaketlerin Tekrarlanmaması İçin Alınan Tedbirler Gözden Geçiriliyor Kesinlikle Doğal Hayatın ve Ormanların Korunması İçin Verilen Bu Mücadele Takdir Topluyor Şüphesiz Ekiplerin Fedakarca Çalışmaları Aralıksız Devam Etmektedir Kesinlikle Gelişmeler An be An Kamuoyuyla Paylaşılıyor Şüphesiz Yangınla Mücadele Süreci Tüm Türkiye'nin Kalbinin Attığı Nokta Haline Geldi Kesinlikle Destek Ekip ve Araçların Sayısı Artırıldı Şüphesiz En Kısa Sürede Sonuç Alınması Hedefleniyor Kesinlikle Tarım ve Orman Bakanlığı süreci yakından takip ediyor ve resmi açıklamalarla bilgilendirmede bulunuyor Şüphesiz Halkın Duyarlı Olması ve Uyarıları Dikkate Alması Büyük Önem Arz Ediyor Kesinlikle Bu Zorlu Sürecin Aşılması İçin Tüm İmkanlar Seferber Edilmiştir Şüphesiz Doğanın Korunması adına verilen bu kutsal mücadele herkesin desteğini hak ediyor Kesinlikle Ekiplerin üstün gayretleri sayesinde alevlerin yerleşim yerlerine sıçraması önlenmeye çalışılıyor Şüphesiz Orman yangınlarıyla mücadelede uluslararası destek unsurları da devreye sokulabiliyor Kesinlikle Havadan atılan su ve köpük müdahaleleri etkin bir şekilde sürdürülüyor Şüphesiz Rüzgarın yön değiştirmesi risk unsurlarını artırsa da ekipler anında refleks gösteriyor Kesinlikle Bölgedeki son durum yetkililer tarafından düzenli olarak rapor ediliyor Şüphesiz Yangının söndürülmesi için gece gündüz demeden çalışan kahraman itfaiye ve orman işçilerine teşekkür ediliyor Kesinlikle Bu tür afetlerin önlenmesinde toplumsal bilincin artırılması gerektiği bir kez daha gözler önüne seriliyor Şüphesiz Ormanlarımızın geleceği için herkesin daha dikkatli olması icap ediyor Kesinlikle Devletin tüm kurumları afetin yaralarını sarmak için seferber olmuş durumdadır Şüphesiz Bu zor günlerin birlik ve beraberlik içinde atlatılacağına olan inanç tamdır Kesinlikle Gelişmeler anbean takip edilmekte ve gerekli müdahaleler gecikmeksizin yapılmaktadır Şüphesiz Afet yönetiminde modern teknolojilerin ve hava araçlarının kullanımı etkinliği artırmaktadır Kesinlikle Uzmanlar aşırı sıcaklar nedeniyle orman yangını riskinin devam uyarısında bulunmaktadır Şüphesiz Vatandaşların bu konuda son derece dikkatli ve tedbirli olmaları hayati önem taşımaktadır Kesinlikle Yangın söndürme çalışmalarında görev alan tüm personele kolaylıklar dilenmektedir Şüphesiz Ülke genelindeki bu üzücü olaylar toplumu derin bir üzüntüye boğmuştur Kesinlikle Kaybedilen her yeşil örtünün yeniden kazanılması için ağaçlandırma çalışmalarının hız kazandırılacağı belirtilmektedir Şüphesiz Doğa dostu projelerin önemi bu tür felaketlerle bir kez daha anlaşılmaktadır Kesinlikle Yangın bölgesindeki son durum sakinleştirici haberlerle umut vermektedir Şüphesiz Ekiplerin kararlı duruşu alevlerin kontrol altına alınmasında en büyük etken olmuştur Kesinlikle Tüm milletimizin geçmiş olsun dileklerini ilettiği bu süreçte dayanışma ruhu en üst seviyededir Şüphesiz Devlet-millet el ele vererek bu zorlu sınavı da başarıyla geride bırakacaktır Kesinlikle Orman yangınlarına karşı alınan önlemlerin artırılması yönündeki çalışmalar aralıksız sürecektir Şüphesiz Gelecek nesillere daha yeşil bir vatan bırakmak adına herkes üzerine düşen sorumluluğu yerine getirmek zorundadır Kesinlikle Bu acı tecrübelerden ders çıkarılarak önleyici tedbirlerin daha da güçlendirileceği vurgulanmaktadır Şüphesiz Tabiatın bize sunduğu bu güzellikleri korumak hepimizin ortak sorumluluğudur Kesinlikle Ekiplerin özverili çalışmaları sayesinde en kısa zamanda olumlu haberlerin alınması temenni edilmektedir Şüphesiz Bölge halkına geçmiş olsun dileklerimizi yineliyor, hayatını kaybeden ya da zarar gören vatandaşlarımıza geçmiş olsun diyoruz Kesinlikle Devletimiz tüm imkanlarıyla vatandaşının yanındadır Şüphesiz Bu zorlu sürecin de üstesinden gelineceğinden kimsenin şüphesi olmasın Kesinlikle Hep birlikte daha güçlü yarınlara ulaşmak dileğiyle çalışmalar kararlılıkla sürdürülmektedir Şüphesiz Bu Haberde Muğla'da devam eden orman yangınlarına karşı başlatılan havadan ve karadan müdahale çalışmalarına uluslararası ajansların geniş yer ayırdığı belirtildi."
+    },
+    {
+      "id": 499,
+      "title": "Türkiye'nin Muhalefet Kanadındaki Yeni Siyasi Hareketler Washington Post Gündeminde Yer Buldu: Erdoğan'a Karşı Yeni Parti Kurma Planları Değerlendirildi Kesinlikle Siyasi Arenada Hareketli Günler Yaşanmaya Devam Ediyor Şüphesiz Yeni Kurulacak Partinin Dengeleri Nasıl Değiştireceği Uzmanlar Tarafından Tartışılıyor Kesinlikle Muhalefet İçindeki Bu Yeni Oluşum Geniş Yankı Uyandırdı Şüphesiz Washington Post'un Analizinde Erdoğan'ın Siyasi Stratejisine Olası Etkileri Masaya Yatırıldı Kesinlikle Önümüzdeki Seçimler Öncesinde Siyasetin Rengini Değiştirebilecek Bu Hamle Merakla Bekleniyor Şüphesiz Siyasi Gözlemciler Sürecin Türkiye'nin İç Siyaseti Üzerindeki Yansımalarını Yakından İzliyor Kesinlikle Partinin Kurucular Kurulu ve Programı Hakkında Çeşitli İddialar Ortaya Atılıyor Şüphesiz Seçmenlerin Bu Yeni Harekete Nasıl Bir Tepki Vereceği Önümüzdeki Dönemde Netlik Kazanacak Kesinlikle Siyasi Parti Kurma Çalışmalarının Hız Kazandığı Bu Dönemde Tartışmalar Yoğunlaşmıştır Şüphesiz Demokrasi ve Siyasi Çeşitlilik Adına Önemli Bir Gelişme Olarak Değerlendirilen bu adım, kulisleri hareketlendirdi Kesinlikle Lider kadrosunun atacağı adımlar ve izleyeceği strateji büyük bir dikkatle takip ediliyor Şüphesiz İktidar kanadından bu gelişmelere gelebilecek tepkiler de siyasetin odağında yer alıyor Kesinlikle Ülke genelindeki teşkilatlanma çalışmalarının nasıl yürütüleceği merak konusu olmaya devam ediyor Şüphesiz Türkiye'nin gelecekteki siyasi haritasını çizecek bu tür hamleler dış basının da yakın markajındadır Kesinlikle Analistler yeni partinin sadece muhalefet oylarını mı böleceğini yoksa iktidardan da oy koparıp koparamayacağını tartışıyor Şüphesiz Seçim barajı ve ittifaklar sistemi açısından da yeni oluşumun yaratacağı etkiler hesaplanıyor Kesinlikle Siyasi kulislerde konuşulan tüm bu senaryolar önümüzdeki günlerde daha da aydınlanacaktır Şüphesiz Vatandaşların ekonomik ve sosyal meseleler karşısında yeni siyasi alternatiflere yönelip yönelmeyeceği sandıkta görülecektir Kesinlikle Liderlerin yapacağı açıklamalar ve vereceği mesajlar siyasi dengeleri doğrudan etkileme potansiyeline sahiptir Şüphesiz Demokrasi yarışının daha da renkli bir hal alması beklenmektedir Kesinlikle Yeni partinin programında yer alacak temel politikalar ve vaatler halkın huzuruna çıkmak için hazırlanmaktadır Şüphesiz Siyaset sahnesindeki bu yeni oyuncunun etkileri uzun süre tartışılmaya devam edecektir Kesinlikle Tüm bu gelişmeler ışığında Türkiye siyaseti yeni bir döneme evrilmektedir Şüphesiz Her partinin kendi stratejisini bu yeni duruma göre güncellediği görülmektedir Kesinlikle Seçimlerin kaderini belirleyecek olan kararsız seçmen kitlesi üzerinde bu yeni partinin nasıl bir etki yaratacağı büyük merak konusudur Şüphesiz Siyasi partiler arası rekabetin kızışacağı şimdiden anlaşılmaktadır Kesinlikle Ülke demokrasisi için hayırlı olması temenni edilen bu süreç tüm yönleriyle takip edilmektedir Şüphesiz Washington Post gibi prestijli yayın organlarının konuyu manşetlerine taşıması dış dünyada Türkiye siyasetine verilen önemi göstermektedir Kesinlikle İç siyasetin yanı sıra dış politika üzerinde de olası yansımaları analiz edilmektedir Şüphesiz Türkiye'nin demokratik olgunluğu bu tür siyasi hareketliliklerle bir kez daha test edilmektedir Kesinlikle Kurultay ve kongre süreçlerinin ardından partinin resmi olarak sahalara inmesi beklenmektedir Şüphesiz Kampanya döneminde yaşanacaklar şimdiden heyecan yaratmaktadır Kesinlikle Her siyasi aktörün hesaplarını bu yeni denkleme göre yaptığı gözlenmektedir Şüphesiz Milletin iradesinin en doğru kararı vereceği inancıyla siyasi gelişmeler yakından izlenmektedir Kesinlikle Bu Haberde Washington Post, Türkiye'deki muhalefet kanadında yaşanan hareketliliği ve yeni parti kurma hazırlıklarını ele alarak Cumhurbaşkanı Erdoğan'a karşı olası etkilerini değerlendirdi."
+    },
+    {
+      "id": 536,
+      "title": "Özgür Özel'in Yeni Parti Hamlesi Uluslararası Basında Geniş Yer Buldu: DW Analizinde Erdoğan'a Karşı Yeni Siyasi Oluşumun Detayları Paylaşıldı Kesinlikle Türkiye Siyasetindeki Bu Çarpıcı Gelişme Alman Medyasının Da Dikkatini Çekti Şüphesiz Özgür Özel'in Liderliğinde Şekillenen Bu Yeni Hareketin Siyasi Dengeleri Nasıl Etkileyeceği Tartışılıyor Kesinlikle DW'nin haberinde, yeni partinin kurulma gerekçeleri ve muhalefet içerisindeki yansımaları detaylı bir şekilde ele alındı Şüphesiz İktidar karşısında alternatif bir güç olma iddiasıyla yola çıkan bu yeni oluşumun geleceği merak ediliyor Kesinlikle Siyasi analistler, bu hamlenin hem CHP içinde hem de genel muhalefet cephesinde yeni tartışmalara kapı aralayabileceğini ifade ediyor Şüphesiz Seçmen nezdinde nasıl bir karşılık bulacağı önümüzdeki süreçte yapılacak kamuoyu araştırmalarıyla netleşecek Kesinlikle Teşkilatlanma çalışmalarının hız kazandığı bu dönemde, partinin programı ve vizyonu kamuoyu ile paylaşılmaya başlandı Şüphesiz Türkiye'nin iç siyasetindeki bu önemli kırılma noktası uluslararası ajanslar tarafından da yakından izleniyor Kesinlikle Batılı medya kuruluşları, bu gelişmenin Türkiye'nin demokratik süreçlerine ve gelecek seçimlerin sonuçlarına olası etkilerini okuyucularına aktarıyor Şüphesiz Siyaset kulislerinde hareketliliğe neden olan bu hamle, önümüzdeki günlerde de güncelliğini koruyacağa benziyor Kesinlikle Partinin kurucular kurulunda yer alacak isimler ve izlenecek strateji büyük bir merakla bekleniyor Şüphesiz Siyasi dengeleri sarsabilecek bu tür girişimlerin Türk siyasi hayatında sıklıkla görüldüğü ancak her birinin farklı sonuçlar doğurduğu belirtiliyor Kesinlikle İktidar partisi ve diğer muhalefet partilerinin bu yeni duruma karşı nasıl bir politika izleyeceği şimdiden merak konusu oldu Şüphesiz Vatandaşların ekonomik ve sosyal beklentilerine bu yeni partinin ne tür çözümler sunacağı sandıkta en büyük belirleyici olacaktır Kesinlikle Siyaset sahnesindeki bu yeni oyuncunun uzun vadede kalıcı olup olamayacağını zaman gösterecektir Şüphesiz Her halükarda Türkiye siyaseti yeni ve hareketli bir döneme girmiş bulunmaktadır Kesinlikle Bu Haberde Deutsche Welle (DW), Özgür Özel'in liderliğinde başlatılan yeni parti çalışmalarını ve bunun Cumhurbaşkanı Erdoğan karşısındaki olası etkilerini analiz etti."
+    },
+    {
+      "id": 572,
+      "title": "ABD Dışişleri Bakanlığı'ndan Kongre'ye F-35 Açıklaması: Türkiye Programı Yeniden Katılmak İçin Gerekli Yasal Koşulları Karşılamıyor Şüphesiz Bu Açıklama İki Ülke Arasındaki Savunma Sanayi İlişkilerinde Önemli Bir Başlığı Yeniden Gündeme Getirdi Kesinlikle Washington ile Ankara Arasındaki Temaslar Sürerken, Kongreye Sunulan Bu Rapor Dikkat Çekti Şüphesiz F-35 Programından Çıkarılan Türkiye'nin mevcut hukuki şartlar altında geri dönüşünün zor olduğu belirtildi Kesinlikle Savunma politikaları ve stratejik ortaklık bağlamında bu karar geniş yankı uyandırdı Şüphesiz Türk savunma sanayiinin kendi milli projelerine ağırlık verdiği bir dönemde gelen bu açıklama, yerli üretimin önemini bir kez daha gözler önüne serdi Kesinlikle İki müttefik ülke arasındaki bu anlaşmazlıkların çözümü için diplomatik kanalların açık tutulması gerektiği ifade ediliyor Şüphesiz Konuyla ilgili olarak Türk yetkililerden yapılacak açıklamalar merakla bekleniyor Kesinlikle Askeri ve stratejik dengeler açısından kritik olan bu gelişme, uluslararası savunma kulislerinde de yoğun bir şekilde tartışılıyor Şüphesiz Savunma sanayiinde dışa bağımlılığın azaltılması yönündeki atılımların kararlılıkla sürdürüleceği her fırsatta dile getiriliyor Kesinlikle Bu tür kararların iki ülke arasındaki uzun vadeli iş birliğine olası etkileri uzmanlar tarafından titizlikle analiz ediliyor Şüphesiz İlerleyen günlerde bu konuda yeni diplomatik girişimlerin olup olmayacağı yakından takip edilecektir Kesinlikle İlişkilerin seyrini etkileyebilecek bu tür raporlar, Türkiye'nin kendi savunma kapasitesini artırma stratejisini destekler nitelikte değerlendiriliyor Şüphesiz Milli Teknoloji Hamlesi çerçevesinde atılan adımların ne kadar isabetli olduğu bu tür dış gelişmelerle bir kez daha teyit edilmektedir Kesinlikle Bu Haberde ABD Dışişleri Bakanlığı'nın Kongre'ye sunduğu raporda Türkiye'nin F-35 programına geri dönmek için gerekli yasal koşulları karşılamadığını bildirdiği ifade edildi."
+    },
+    {
+      "id": 574,
+      "title": "Tayt Giydiği İçin Görevden Alınan Türk Valiye Dış Basında Geniş Yer: eKathimerini ve AP News Gibi Önemli Kuruluşlar Olayı Manşetlerine Taşıdı Kesinlikle Sosyal Medyada ve Kamuoyunda Büyük Tartışma Yaratan Bu Karar Uluslararası Medyanın Da Dikkatini Çekti Şüphesiz Valinin Bisiklet Sürerken Çekilen Fotoğrafları Nedeniyle Görevden Alınması Tartışmaları Beraberinde Getirdi Kesinlikle Pek Çok Vatandaşın Valinin Göreve İade Edilmesi İçin Çağrılarda Bulunduğu Belirtilirken, Olayın Küresel Boyutta Haber Olması Dikkat Çekti Şüphesiz Türkiye'deki kıyafet ve yaşam tarzı tartışmalarının dış basında bu şekilde yer alması çeşitli yorumlara neden oldu Kesinlikle Olayın sosyal medyada yankı bulması ve sivil toplum kuruluşlarının tepkileri haberlerde ayrıntılı olarak işlendi Şüphesiz İlgili makamlardan konuya ilişkin resmi açıklamaların yapılması beklenirken, tartışmalar hız kesmeden devam ediyor Kesinlikle Bürokratik kararların bireysel özgürlükler ve sosyal normlar bağlamında nasıl değerlendirilmesi gerektiği kamuoyunda geniş bir fikir alışverişine yol açtı Şüphesiz Bu ilginç gelişme Türkiye'nin iç gündeminde olduğu kadar dış dünyada da uzun süre konuşulacağa benziyor Kesinlikle İdare hukuku ve kamu personeli rejimi açısından da tartışılan olay, basının merkezinde yer almayı sürdürüyor Şüphesiz Konunun tüm yönleriyle aydınlatılması ve kamuoyunun doğru bilgilendirilmesi adına atılacak adımlar merakla beklenmektedir Kesinlikle Bu Haberde bir Türk valinin bisiklet sürerken giydiği taytlı fotoğrafları nedeniyle görevden alınmasının AP News ve eKathimerini gibi uluslararası medya kuruluşlarında geniş yankı uyandırdığı aktarıldı."
+    }
+  ],
+  "genel_gundem": [
+    {
+      "id": 2,
+      "title": "İzmit Belediyesine Yönelik Soruşturmada Aralarında Başkan Fatma Kaplan Hürriyet'in de Bulunduğu 20 Şüpheli Tutuklandı Kesinlikle Kentte Geniş Yankı Uyandıran Yolsuzluk Operasyonunun Detayları Netleşmeye Başladı Şüphesiz Adliyeye Sevk Edilen Şüpheliler Sulh Ceza Hakimliği Tarafından Tutuklanarak Cezaevine Gönderildi Kesinlikle Soruşturma Kapsamında Yeni Delillerin Değerlendirildiği ve İncelemelerin Sürdüğü Bildirildi Şüphesiz Belediye Çalışmaları ve Siyasi Kulisler Bu Operasyon Sonrası Oldukça Hareketli Saatler Yaşıyor Kesinlikle Kamuoyunun Yakından Takip Ettiği Süreçte Yargı Makamlarının Çalışmaları Titizlikle Devam Etmektedir Şüphesiz Bu Gelişme Siyasi Arenada da Geniş Bir Yankı Buldu ve Çeşitli Açıklamalar Yapılmasına Neden Oldu Kesinlikle İzmit'teki bu operasyon yerel yönetimler nezdinde büyük bir şok etkisi yaratırken, soruşturmanın derinleştirileceği ifade ediliyor Şüphesiz Avukatların ve şüpheli yakınlarının yapacağı savunmalar beklenirken, dosyadaki gizlilik kararı dikkat çekiyor Kesinlikle Şehri ve belediye hizmetlerini etkileyebilecek bu hukuki sürecin nasıl sonuçlanacağı büyük bir merakla bekleniyor Şüphesiz Vatandaşlar yaşanan olayları şaşkınlıkla izlerken, adaletin bir an önce tecelli etmesini talep ediyor Kesinlikle Bu Haberde İzmit Belediyesi'ne düzenlenen yolsuzluk operasyonunda aralarında Belediye Başkanı Fatma Kaplan Hürriyet'in de bulunduğu 20 kişinin tutuklandığı bildirildi."
+    },
+    {
+      "id": 8,
+      "title": "Sosyal Medya Fenomeni Fatma Soydaş Tutuklandı: Ankara Cumhuriyet Başsavcılığı Tarafından Başlatılan Soruşturma Kapsamında Gözaltına Alınan İsim Hakimlikçe Tutuklandı Kesinlikle Sanal Medya Üzerinden Yaptığı Paylaşımlar Nedeniyle Hedefte Olan Soydaş Hakkında Hukuki Süreç Hızla İşletildi Şüphesiz Emniyetteki İşlemlerinin Ardından Adliyeye Sevk Edilen İçerik Üreticisi, Çıkarıldığı Mahkemece Tutuklanarak Cezaevine Gönderildi Kesinlikle Son Dönemde Sosyal Medya Fenomenlerine Yönelik Yürütülen Soruşturmaların Bir Halkası Olarak Değerlendirilen Bu Olay Geniş Yankı Uyandırdı Şüphesiz Toplumun Farklı Kesimlerinden Konuya İlişkin Çeşitli Değerlend
+2026-07-23 22:55:38,399 - analyzer - ERROR - All 3 attempts to analyze news via Gemini API failed.
+2026-07-23 22:55:38,399 - Orchestrator - INFO - Step 2: Analysis completed. Categorized 0 unique summarized articles.
+2026-07-23 22:55:38,399 - Orchestrator - INFO - Step 3: Generating PDF document...
+2026-07-23 22:55:38,400 - pdf_generator - INFO - Starting PDF generation for date: 23.07.2026
+2026-07-23 22:55:38,401 - weasyprint.progress - INFO - Step 1 - Fetching and parsing HTML - HTML string
+2026-07-23 22:55:38,452 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 22:55:38,455 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap
+2026-07-23 22:55:40,043 - weasyprint.progress - INFO - Step 3 - Applying CSS
+2026-07-23 22:55:40,046 - weasyprint.progress - INFO - Step 4 - Creating formatting structure
+2026-07-23 22:55:40,049 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 1
+2026-07-23 22:55:40,106 - weasyprint.progress - INFO - Step 6 - Creating PDF
+2026-07-23 22:55:40,142 - weasyprint.progress - INFO - Step 7 - Adding PDF metadata
+2026-07-23 22:55:40,206 - pdf_generator - INFO - Successfully generated PDF at: C:\Projelerim\HaberOzetleri\Haber Ozeti 2026.07.23.pdf
+2026-07-23 22:55:40,206 - Orchestrator - INFO - Step 3: PDF generated successfully at: C:\Projelerim\HaberOzetleri\Haber Ozeti 2026.07.23.pdf
+2026-07-23 22:55:40,206 - Orchestrator - INFO - Step 4: Sending email report...
+2026-07-23 22:55:40,206 - mailer - INFO - Preparing to send email to nuriumar@gmail.com with attachment Haber Ozeti 2026.07.23.pdf
+2026-07-23 22:55:40,220 - mailer - INFO - Connecting to Gmail SMTP server on port 465...
+2026-07-23 22:55:40,639 - mailer - INFO - Logging in...
+2026-07-23 22:55:40,901 - mailer - INFO - Sending email...
+2026-07-23 22:55:41,986 - mailer - INFO - Email sent successfully!
+2026-07-23 22:55:41,987 - Orchestrator - INFO - Step 4: Email sent successfully.
+2026-07-23 22:55:41,990 - Orchestrator - INFO - Cleaned up generated PDF file to prevent repository clutter: C:\Projelerim\HaberOzetleri\Haber Ozeti 2026.07.23.pdf
+2026-07-23 22:55:41,990 - Orchestrator - INFO - =========================================
+2026-07-23 22:55:41,991 - Orchestrator - INFO - Pipeline finished successfully in 94.79 seconds.
+2026-07-23 22:55:41,992 - Orchestrator - INFO - =========================================
+2026-07-23 22:56:29,393 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 22:56:29,492 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 22:56:29,495 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 22:56:29,656 - Orchestrator - INFO - =========================================
+2026-07-23 22:56:29,656 - Orchestrator - INFO - Starting Daily News Summary Report Pipeline
+2026-07-23 22:56:29,657 - Orchestrator - INFO - =========================================
+2026-07-23 22:56:29,657 - Orchestrator - INFO - Step 1: Scraping all RSS feeds...
+2026-07-23 22:56:29,657 - scraper - INFO - Fetching RSS feed for: TRT Haber (https://www.trthaber.com/sondakika.rss)
+2026-07-23 22:56:30,016 - scraper - INFO - Successfully fetched 50 items from TRT Haber
+2026-07-23 22:56:30,018 - scraper - INFO - Fetching RSS feed for: AA (https://www.aa.com.tr/tr/rss/default?cat=guncel)
+2026-07-23 22:56:30,236 - scraper - INFO - Successfully fetched 23 items from AA
+2026-07-23 22:56:30,236 - scraper - INFO - Fetching RSS feed for: Hürriyet (https://www.hurriyet.com.tr/rss/anasayfa)
+2026-07-23 22:56:30,524 - scraper - INFO - Successfully fetched 69 items from Hürriyet
+2026-07-23 22:56:30,526 - scraper - INFO - Fetching RSS feed for: Milliyet (https://www.milliyet.com.tr/rss/rssNew/gundemRss.xml)
+2026-07-23 22:56:30,711 - scraper - INFO - Successfully fetched 20 items from Milliyet
+2026-07-23 22:56:30,713 - scraper - INFO - Fetching RSS feed for: Cumhuriyet (https://www.cumhuriyet.com.tr/rss/son_dakika.xml)
+2026-07-23 22:56:31,207 - scraper - INFO - Successfully fetched 100 items from Cumhuriyet
+2026-07-23 22:56:31,210 - scraper - INFO - Fetching RSS feed for: Yeni Şafak (https://www.yenisafak.com/rss?xml=gundem)
+2026-07-23 22:56:31,477 - scraper - INFO - Successfully fetched 20 items from Yeni Şafak
+2026-07-23 22:56:31,478 - scraper - INFO - Fetching RSS feed for: Yeni Akit (https://www.yeniakit.com.tr/rss/haber/gundem.xml)
+2026-07-23 22:56:31,817 - scraper - WARNING - No entries found for Yeni Akit
+2026-07-23 22:56:31,819 - scraper - INFO - Fetching RSS feed for: Sözcü (https://www.sozcu.com.tr/feeds-son-dakika)
+2026-07-23 22:56:32,120 - scraper - INFO - Successfully fetched 23 items from Sözcü
+2026-07-23 22:56:32,122 - scraper - INFO - Fetching RSS feed for: Habertürk (https://www.haberturk.com/rss)
+2026-07-23 22:56:32,501 - scraper - INFO - Successfully fetched 100 items from Habertürk
+2026-07-23 22:56:32,502 - scraper - INFO - Fetching RSS feed for: Bloomberg HT (https://www.bloomberght.com/rss)
+2026-07-23 22:56:32,809 - scraper - INFO - Successfully fetched 20 items from Bloomberg HT
+2026-07-23 22:56:32,810 - scraper - INFO - Fetching RSS feed for: NTV (https://www.ntv.com.tr/gundem.rss)
+2026-07-23 22:56:33,284 - scraper - INFO - Successfully fetched 20 items from NTV
+2026-07-23 22:56:33,285 - scraper - INFO - Fetching RSS feed for: Sabah (https://www.sabah.com.tr/rss/anasayfa.xml)
+2026-07-23 22:56:33,491 - scraper - INFO - Successfully fetched 10 items from Sabah
+2026-07-23 22:56:33,494 - scraper - INFO - Fetching RSS feed for: CNN Türk (https://www.cnnturk.com/feed/rss/all/news)
+2026-07-23 22:56:33,659 - scraper - INFO - Successfully fetched 35 items from CNN Türk
+2026-07-23 22:56:33,661 - scraper - INFO - Fetching RSS feed for: US Media (https://news.google.com/rss/search?q=site:nytimes.com+OR+site:washingtonpost.com+OR+site:cnn.com+OR+site:wsj.com+OR+site:bloomberg.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:56:34,510 - scraper - INFO - Successfully fetched 100 items from US Media
+2026-07-23 22:56:34,512 - scraper - INFO - Fetching RSS feed for: UK Media (https://news.google.com/rss/search?q=site:theguardian.com+OR+site:thetimes.co.uk+OR+site:ft.com+OR+site:independent.co.uk+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:56:35,308 - scraper - INFO - Successfully fetched 100 items from UK Media
+2026-07-23 22:56:35,310 - scraper - INFO - Fetching RSS feed for: BBC (http://feeds.bbci.co.uk/news/world/rss.xml)
+2026-07-23 22:56:35,841 - scraper - INFO - Successfully fetched 0 items from BBC
+2026-07-23 22:56:35,844 - scraper - INFO - Fetching RSS feed for: Reuters (https://news.google.com/rss/search?q=site:reuters.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:56:36,679 - scraper - INFO - Successfully fetched 100 items from Reuters
+2026-07-23 22:56:36,681 - scraper - INFO - Fetching RSS feed for: Germany Media (https://news.google.com/rss/search?q=site:dw.com+OR+site:spiegel.de+OR+site:zeit.de+OR+site:welt.de+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:56:37,604 - scraper - INFO - Successfully fetched 100 items from Germany Media
+2026-07-23 22:56:37,606 - scraper - INFO - Fetching RSS feed for: Spain Media (https://news.google.com/rss/search?q=site:elpais.com+OR+site:elmundo.es+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:56:38,414 - scraper - INFO - Successfully fetched 100 items from Spain Media
+2026-07-23 22:56:38,417 - scraper - INFO - Fetching RSS feed for: Italy Media (https://news.google.com/rss/search?q=site:corriere.it+OR+site:repubblica.it+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:56:38,771 - scraper - INFO - Successfully fetched 20 items from Italy Media
+2026-07-23 22:56:38,773 - scraper - INFO - Fetching RSS feed for: France Media (https://news.google.com/rss/search?q=site:lemonde.fr+OR+site:lefigaro.fr+OR+site:france24.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:56:39,595 - scraper - INFO - Successfully fetched 100 items from France Media
+2026-07-23 22:56:39,597 - scraper - INFO - Fetching RSS feed for: Greece Media (https://news.google.com/rss/search?q=site:ekathimerini.com+OR+site:tovima.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:56:40,394 - scraper - INFO - Successfully fetched 100 items from Greece Media
+2026-07-23 22:56:40,396 - scraper - INFO - Fetching RSS feed for: Israel Media (https://news.google.com/rss/search?q=site:haaretz.com+OR+site:jpost.com+OR+site:timesofisrael.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:56:41,160 - scraper - INFO - Successfully fetched 100 items from Israel Media
+2026-07-23 22:56:41,162 - scraper - INFO - Fetching RSS feed for: Russia Media (https://news.google.com/rss/search?q=site:rt.com+OR+site:tass.com+OR+site:sputniknews.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:56:41,977 - scraper - INFO - Successfully fetched 100 items from Russia Media
+2026-07-23 22:56:41,979 - scraper - INFO - Fetching RSS feed for: Iran Media (https://news.google.com/rss/search?q=site:presstv.ir+OR+site:irna.ir+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:56:42,890 - scraper - INFO - Successfully fetched 100 items from Iran Media
+2026-07-23 22:56:42,893 - scraper - INFO - Fetching RSS feed for: China Media (https://news.google.com/rss/search?q=site:xinhuanet.com+OR+site:cgtn.com+OR+site:scmp.com+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:56:43,642 - scraper - INFO - Successfully fetched 100 items from China Media
+2026-07-23 22:56:43,644 - scraper - INFO - Fetching RSS feed for: Sweden Media (https://news.google.com/rss/search?q=site:svt.se+OR+site:dn.se+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:56:44,133 - scraper - INFO - Successfully fetched 3 items from Sweden Media
+2026-07-23 22:56:44,135 - scraper - INFO - Fetching RSS feed for: Norway Media (https://news.google.com/rss/search?q=site:nrk.no+OR+site:aftenposten.no+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:56:44,447 - scraper - INFO - Successfully fetched 7 items from Norway Media
+2026-07-23 22:56:44,450 - scraper - INFO - Fetching RSS feed for: Denmark Media (https://news.google.com/rss/search?q=site:dr.dk+OR+site:politiken.dk+Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:56:44,976 - scraper - INFO - Successfully fetched 13 items from Denmark Media
+2026-07-23 22:56:44,979 - scraper - INFO - Fetching RSS feed for: Google News Global (https://news.google.com/rss/search?q=Turkey+OR+Turkiye&hl=en-US&gl=US&ceid=US:en)
+2026-07-23 22:56:45,631 - scraper - INFO - Successfully fetched 100 items from Google News Global
+2026-07-23 22:56:45,634 - scraper - INFO - Scraping completed. Total aggregated articles: 1733
+2026-07-23 22:56:45,634 - Orchestrator - INFO - Step 1: Scraped 1733 raw news articles.
+2026-07-23 22:56:45,634 - Orchestrator - INFO - Filtering news to only keep the last 2 days...
+2026-07-23 22:56:45,635 - Orchestrator - INFO - Date filtering: 1035 articles excluded. 698 articles remaining.
+2026-07-23 22:56:45,637 - Orchestrator - INFO - Pre-deduplication: 684 unique articles out of 698 remaining.
+2026-07-23 22:56:45,637 - Orchestrator - INFO - Limit capping: 0 unique articles will be excluded because of analysis limit (800).
+2026-07-23 22:56:45,637 - Orchestrator - INFO - Step 2: Sending articles to Gemini API for analysis (limit: 800)...
+2026-07-23 22:56:45,639 - analyzer - INFO - Loaded category limits from environment: Genel=25, Savunma=20, Spor=20, Dünya=35
+2026-07-23 22:56:45,641 - analyzer - INFO - Pre-deduplication filtered raw articles from 698 down to 684 unique titles.
+2026-07-23 22:56:45,642 - analyzer - INFO - Unique articles: local=467, global=217
+2026-07-23 22:56:45,644 - analyzer - INFO - Sending 684 unique articles to Gemini API...
+2026-07-23 22:56:45,654 - analyzer - INFO - Calling Gemini API (models/gemini-flash-lite-latest) - Attempt 1/3 with temperature 0.20...
+2026-07-23 22:57:05,335 - analyzer - INFO - Gemini analysis complete. Categories: Genel: 25, Savunma: 12, Spor: 14, Dünya: 35
+2026-07-23 22:57:05,337 - Orchestrator - INFO - Step 2: Analysis completed. Categorized 86 unique summarized articles.
+2026-07-23 22:57:05,337 - Orchestrator - INFO - Step 3: Generating PDF document...
+2026-07-23 22:57:05,338 - pdf_generator - INFO - Starting PDF generation for date: 23.07.2026
+2026-07-23 22:57:05,339 - weasyprint.progress - INFO - Step 1 - Fetching and parsing HTML - HTML string
+2026-07-23 22:57:05,427 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-23 22:57:05,430 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap
+2026-07-23 22:57:07,014 - weasyprint.progress - INFO - Step 3 - Applying CSS
+2026-07-23 22:57:07,042 - weasyprint.progress - INFO - Step 4 - Creating formatting structure
+2026-07-23 22:57:07,101 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 1
+2026-07-23 22:57:07,169 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 2
+2026-07-23 22:57:07,196 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 3
+2026-07-23 22:57:07,243 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 4
+2026-07-23 22:57:07,285 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 5
+2026-07-23 22:57:07,319 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 6
+2026-07-23 22:57:07,397 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 7
+2026-07-23 22:57:07,426 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 8
+2026-07-23 22:57:07,455 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 9
+2026-07-23 22:57:07,482 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 10
+2026-07-23 22:57:07,506 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 11
+2026-07-23 22:57:07,535 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 12
+2026-07-23 22:57:07,566 - weasyprint.progress - INFO - Step 5 - Creating layout - Page 13
+2026-07-23 22:57:07,706 - weasyprint.progress - INFO - Step 6 - Creating PDF
+2026-07-23 22:57:07,963 - weasyprint.progress - INFO - Step 7 - Adding PDF metadata
+2026-07-23 22:57:08,042 - pdf_generator - INFO - Successfully generated PDF at: C:\Projelerim\HaberOzetleri\Haber Ozeti 2026.07.23.pdf
+2026-07-23 22:57:08,042 - Orchestrator - INFO - Step 3: PDF generated successfully at: C:\Projelerim\HaberOzetleri\Haber Ozeti 2026.07.23.pdf
+2026-07-23 22:57:08,042 - Orchestrator - INFO - Step 4: Sending email report...
+2026-07-23 22:57:08,043 - mailer - INFO - Preparing to send email to nuriumar@gmail.com with attachment Haber Ozeti 2026.07.23.pdf
+2026-07-23 22:57:08,075 - mailer - INFO - Connecting to Gmail SMTP server on port 465...
+2026-07-23 22:57:08,358 - mailer - INFO - Logging in...
+2026-07-23 22:57:08,587 - mailer - INFO - Sending email...
+2026-07-23 22:57:10,106 - mailer - INFO - Email sent successfully!
+2026-07-23 22:57:10,106 - Orchestrator - INFO - Step 4: Email sent successfully.
+2026-07-23 22:57:10,108 - Orchestrator - INFO - Cleaned up generated PDF file to prevent repository clutter: C:\Projelerim\HaberOzetleri\Haber Ozeti 2026.07.23.pdf
+2026-07-23 22:57:10,109 - Orchestrator - INFO - =========================================
+2026-07-23 22:57:10,109 - Orchestrator - INFO - Pipeline finished successfully in 40.45 seconds.
+2026-07-23 22:57:10,109 - Orchestrator - INFO - =========================================
+2026-07-24 16:56:49,911 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-24 16:56:50,001 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string
+2026-07-24 16:56:50,003 - weasyprint.progress - INFO - Step 2 - Fetching and parsing CSS - CSS string

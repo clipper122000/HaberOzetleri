@@ -57,7 +57,7 @@ from analyzer import analyze_news
 from pdf_generator import generate_pdf
 from mailer import send_report_email
 
-def run_pipeline(recipient_email: str = None, skip_email: bool = False, limit: int = 800):
+def run_pipeline(recipient_email: str = None, skip_email: bool = False, limit: int = None):
     """
     Orchestrates the entire news summary reporting pipeline:
     1. Scrapes local and global RSS feeds.
@@ -66,6 +66,16 @@ def run_pipeline(recipient_email: str = None, skip_email: bool = False, limit: i
     4. Generates a beautifully formatted PDF report (using Weasyprint).
     5. Emails the PDF report to the user (via secure Gmail SMTP) with stats.
     """
+    if limit is None:
+        val = os.environ.get("ANALYSIS_LIMIT")
+        if val is None or val.strip() == "":
+            limit = 800
+        else:
+            try:
+                limit = int(val)
+            except ValueError:
+                limit = 800
+
     logger.info("=========================================")
     logger.info("Starting Daily News Summary Report Pipeline")
     logger.info("=========================================")
@@ -193,8 +203,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "--limit", 
         type=int, 
-        default=int(os.environ.get("ANALYSIS_LIMIT", 800)), 
-        help="Maximum number of unique news articles to send for Gemini analysis."
+        default=None, 
+        help="Maximum number of unique news articles to send for Gemini analysis. Defaults to environment variable ANALYSIS_LIMIT, or 800 if not set."
     )
     
     args = parser.parse_args()
