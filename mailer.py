@@ -57,8 +57,8 @@ def send_report_email(
         stats_text = f"""
 Sistem Raporlama İstatistikleri:
 - Toplam Çekilen Haber Sayısı: {total_scraped}
-- Son 2 Günden Eski Olduğu İçin Değerlendirme Dışı Bırakılan Haber Sayısı: {excluded_by_date}
-- Kalan (Son 2 Güne Ait) Haber Sayısı: {remaining_after_date}
+- Son 24 Saatten Eski Olduğu İçin Değerlendirme Dışı Bırakılan Haber Sayısı: {excluded_by_date}
+- Kalan (Son 24 Saate Ait) Haber Sayısı: {remaining_after_date}
 - Limit Nedeniyle Analize Dahil Edilmeyen Haber Sayısı: {excluded_by_limit} (Limit: {limit})
 """
         if category_stats:

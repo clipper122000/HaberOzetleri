@@ -176,10 +176,10 @@ def analyze_news(news_items: List[NewsItem], max_items: int = None) -> Dict[str,
         - 'reasons_for_exclusion' must list the primary reasons why articles in this category were not reported (e.g. "Mükerrer haberler birleştirildi", "Haber değeri düşük bulundu" vb.). Write these reasons in Turkish.
           **CRITICAL**: Do NOT include "Kategori limitine ulaşıldığı için elendi" or similar limit-related reasons unless the number of reported items (`reported_count`) in that category is EXACTLY equal to that category's limit (i.e. {limit_genel} for `genel_gundem`, {limit_savunma} for `savunma_sanayii`, {limit_spor} for `spor`, {limit_dunya} for `dunya_basininda_turkiye`). If the reported count is less than the limit, any exclusions are solely due to low news value or deduplication, not the limit.
  
-      6. **Style & Repetition Constraints**:
-        - Ensure all Turkish text is clean and professional.
-        - **NEVER** repeat words, sentences, or phrases. Avoid repeating starting phrases.
-        - **NEVER** output repetitive filler words such as "Kesinlikle", "Şüphesiz" or other synonyms in a repeating loop. Each news item title and summary must be unique, concise, and structured naturally.
+      6. **Style Constraints**:
+        - Ensure all Turkish text is clean, concise, natural, and professional.
+        - Do not use repetitive starting phrases or unnecessary filler words.
+        - Each news item title and summary must be unique and flow naturally in a standard news tone.
 
     Raw Articles Data (JSON):
     {json.dumps(raw_articles_data, ensure_ascii=False, indent=2)}

@@ -102,14 +102,10 @@ def run_pipeline(recipient_email: str = None, skip_email: bool = False, limit: i
     total_scraped = len(raw_news)
     logger.info(f"Step 1: Scraped {total_scraped} raw news articles.")
     
-    # Filter by date: keep only last 2 days (relative to Turkey Local Time UTC+3)
-    logger.info("Filtering news to only keep the last 2 days...")
-    trt_tz = timezone(timedelta(hours=3))
+    # Filter by date: keep only last 24 hours
+    logger.info("Filtering news to only keep the last 24 hours...")
     now_utc = datetime.now(timezone.utc)
-    now_local = now_utc.astimezone(trt_tz)
-    yesterday_local = now_local.date() - timedelta(days=1)
-    cutoff_local = datetime.combine(yesterday_local, datetime.min.time()).replace(tzinfo=trt_tz)
-    cutoff_utc = cutoff_local.astimezone(timezone.utc)
+    cutoff_utc = now_utc - timedelta(hours=24)
     
     remaining_news = []
     excluded_by_date = 0
