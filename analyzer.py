@@ -32,7 +32,7 @@ class StatsResponse(BaseModel):
     spor: CategoryStats = Field(description="Stats for 'spor' category.")
     dunya_basininda_turkiye: CategoryStats = Field(description="Stats for 'dunya_basininda_turkiye' category.")
 
-def analyze_news(news_items: List[NewsItem], max_items: int = 400) -> Dict[str, List[Dict[str, str]]]:
+def analyze_news(news_items: List[NewsItem], max_items: int = 800) -> Dict[str, List[Dict[str, str]]]:
     """
     Sends the aggregated list of raw news items to Gemini API for translation,
     deduplication, categorization, and summarization.
