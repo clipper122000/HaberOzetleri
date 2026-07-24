@@ -57,7 +57,7 @@ from analyzer import analyze_news
 from pdf_generator import generate_pdf
 from mailer import send_report_email
 
-def run_pipeline(recipient_email: str = None, skip_email: bool = False, limit: int = 400):
+def run_pipeline(recipient_email: str = None, skip_email: bool = False, limit: int = 800):
     """
     Orchestrates the entire news summary reporting pipeline:
     1. Scrapes local and global RSS feeds.
@@ -193,7 +193,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--limit", 
         type=int, 
-        default=int(os.environ.get("ANALYSIS_LIMIT", 400)), 
+        default=int(os.environ.get("ANALYSIS_LIMIT", 800)), 
         help="Maximum number of unique news articles to send for Gemini analysis."
     )
     
